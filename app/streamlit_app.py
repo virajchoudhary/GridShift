@@ -1507,7 +1507,12 @@ def _preferred_model(results: dict[str, Any] | None, options: list[str]) -> str:
     return preferred
 
 
-def _test_leaderboard(results: dict[str, Any] | None) -> pd.DataFrame:
+def _test_leaderboard(
+    results: dict[str, Any] | None,
+    metric: str = "mase",
+    label: str = "MASE",
+    order: list[str] | None = None,
+) -> pd.DataFrame:
     rows = [
         row
         for row in ((results or {}).get("test_common_metrics") or [])
@@ -1516,15 +1521,70 @@ def _test_leaderboard(results: dict[str, Any] | None) -> pd.DataFrame:
     if not rows:
         return pd.DataFrame()
     frame = pd.DataFrame(rows)
-    if not {"model_id", "horizon", "mase"}.issubset(frame.columns):
+    if not {"model_id", "horizon", metric}.issubset(frame.columns):
         return pd.DataFrame()
-    table = frame.pivot_table(index="model_id", columns="horizon", values="mase", aggfunc="first")
-    table = table.reindex(table.mean(axis=1).sort_values().index)
-    table.columns = [f"MASE h{int(column)}" for column in table.columns]
+    table = frame.pivot_table(index="model_id", columns="horizon", values=metric, aggfunc="first")
+    if order:
+        table = table.reindex([name for name in order if name in table.index])
+    else:
+        table = table.reindex(table.mean(axis=1).sort_values().index)
+    table.columns = [f"{label} h{int(column)}" for column in table.columns]
     return table.round(3).reset_index().rename(columns={"model_id": "Model"})
 
 
-def _render_model_guidance(results: dict[str, Any] | None, model_id: str) -> None:
+def _seasonality_note(root: Path) -> str | None:
+    diagnostics, _ = _load_json_if_present(root / "artifacts" / "diagnostics" / "diagnostics.json")
+    if not isinstance(diagnostics, dict):
+        return None
+    seasonal_acf = diagnostics.get("seasonal_acf") or {}
+    stl = diagnostics.get("stl48") or {}
+    daily = seasonal_acf.get("48")
+    weekly = seasonal_acf.get("336")
+    strength = stl.get("daily_seasonal_strength")
+    period = stl.get("period_slots")
+    if daily is None or strength is None or period is None:
+        return None
+    note = (
+        f"**Why the seasonal model wins.** Half-hourly data makes one day exactly {int(period)} "
+        f"slots, and that daily cycle is the strongest structure in the series: autocorrelation is "
+        f"{float(daily):.2f} at lag {int(period)}"
+    )
+    if weekly is not None:
+        note += f", against {float(weekly):.2f} at lag 336 (a week)"
+    note += (
+        f", and an STL decomposition puts daily seasonal strength at {float(strength):.2f}. "
+        f"The `x(1,0,0,{int(period)})` term is a seasonal autoregressive term at that lag — in effect "
+        "\"what was intensity at this time yesterday\". The non-seasonal models have no such term, so "
+        "beyond a few hours their forecasts decay toward the series mean and their error climbs past "
+        "the seasonal-naive benchmark."
+    )
+    return note
+
+
+def _calibration_note(results: dict[str, Any] | None, champion: str | None) -> str | None:
+    if not champion:
+        return None
+    rows = [
+        row
+        for row in ((results or {}).get("test_common_metrics") or [])
+        if isinstance(row, dict)
+        and row.get("group_type") == "overall"
+        and row.get("model_id") == champion
+        and row.get("coverage80") is not None
+    ]
+    if not rows:
+        return None
+    worst = min(rows, key=lambda row: float(row["coverage80"]))
+    return (
+        "**But its uncertainty bands are too narrow.** Point accuracy and interval calibration are "
+        f"different things: at horizon h{int(worst['horizon'])} the 80% intervals of `{champion}` cover "
+        f"only {float(worst['coverage80']):.1%} of outcomes against a nominal 80%. Several less accurate "
+        "models track 80% far more closely. Trust the recommended window more than the width of the band "
+        "drawn around it."
+    )
+
+
+def _render_model_guidance(root: Path, results: dict[str, Any] | None, model_id: str) -> None:
     st.markdown("#### Which model is best?")
     if not isinstance(results, dict):
         st.caption("Recorded test metrics are unavailable, so no ranking can be shown.")
@@ -1559,6 +1619,13 @@ def _render_model_guidance(results: dict[str, Any] | None, model_id: str) -> Non
         )
     st.markdown("\n\n".join(f"- {note}" for note in notes))
 
+    seasonality = _seasonality_note(root)
+    if seasonality:
+        st.markdown(seasonality)
+    calibration = _calibration_note(results, champion)
+    if calibration:
+        st.markdown(calibration)
+
     interpretation = results.get("h3_interpretation")
     if interpretation:
         st.caption(f"Recorded study conclusion: {interpretation}.")
@@ -1572,7 +1639,17 @@ def _render_model_guidance(results: dict[str, Any] | None, model_id: str) -> Non
     table = _test_leaderboard(results)
     if not table.empty:
         with st.expander("Recorded 2025 test accuracy by horizon"):
+            st.caption("Point accuracy as MASE. Lower is better; below 1 beats the seasonal-naive reference.")
             st.dataframe(table, use_container_width=True, hide_index=True)
+            coverage = _test_leaderboard(
+                results, "coverage80", "Cover80", order=list(table["Model"])
+            )
+            if not coverage.empty:
+                st.caption(
+                    "Share of outcomes falling inside the 80% interval, in the same model order. "
+                    "Nominal is 0.80: below that the bands are too narrow, above it they are too wide."
+                )
+                st.dataframe(coverage, use_container_width=True, hide_index=True)
 
 
 def _render_simple(
@@ -1731,7 +1808,7 @@ def _render_simple(
         "The bands describe single slots and cannot be added together to get an interval for the "
         "whole job. Predicted operational CO2 from a forecast, not a measured or avoided-emissions result."
     )
-    _render_model_guidance(results, model_id)
+    _render_model_guidance(root, results, model_id)
 
     with st.expander("Forecast intervals and candidate windows"):
         frame, _ = _forecast_frame(path, bounds, metadata)
