@@ -1494,6 +1494,337 @@ def _change_data_mode() -> None:
         st.session_state["gridshift_origin_time"] = now.time()
 
 
+def _preferred_model(results: dict[str, Any] | None, options: list[str]) -> str:
+    preferred = None
+    if isinstance(results, dict):
+        preferred = (
+            results.get("deployment_model")
+            or results.get("forecast_champion")
+            or results.get("strongest_simple")
+        )
+    if not preferred or preferred not in options:
+        preferred = "calendar_mean" if "calendar_mean" in options else options[0]
+    return preferred
+
+
+def _test_leaderboard(
+    results: dict[str, Any] | None,
+    metric: str = "mase",
+    label: str = "MASE",
+    order: list[str] | None = None,
+) -> pd.DataFrame:
+    rows = [
+        row
+        for row in ((results or {}).get("test_common_metrics") or [])
+        if isinstance(row, dict) and row.get("group_type") == "overall"
+    ]
+    if not rows:
+        return pd.DataFrame()
+    frame = pd.DataFrame(rows)
+    if not {"model_id", "horizon", metric}.issubset(frame.columns):
+        return pd.DataFrame()
+    table = frame.pivot_table(index="model_id", columns="horizon", values=metric, aggfunc="first")
+    if order:
+        table = table.reindex([name for name in order if name in table.index])
+    else:
+        table = table.reindex(table.mean(axis=1).sort_values().index)
+    table.columns = [f"{label} h{int(column)}" for column in table.columns]
+    return table.round(3).reset_index().rename(columns={"model_id": "Model"})
+
+
+def _seasonality_note(root: Path) -> str | None:
+    diagnostics, _ = _load_json_if_present(root / "artifacts" / "diagnostics" / "diagnostics.json")
+    if not isinstance(diagnostics, dict):
+        return None
+    seasonal_acf = diagnostics.get("seasonal_acf") or {}
+    stl = diagnostics.get("stl48") or {}
+    daily = seasonal_acf.get("48")
+    weekly = seasonal_acf.get("336")
+    strength = stl.get("daily_seasonal_strength")
+    period = stl.get("period_slots")
+    if daily is None or strength is None or period is None:
+        return None
+    note = (
+        f"**Why the seasonal model wins.** Half-hourly data makes one day exactly {int(period)} "
+        f"slots, and that daily cycle is the strongest structure in the series: autocorrelation is "
+        f"{float(daily):.2f} at lag {int(period)}"
+    )
+    if weekly is not None:
+        note += f", against {float(weekly):.2f} at lag 336 (a week)"
+    note += (
+        f", and an STL decomposition puts daily seasonal strength at {float(strength):.2f}. "
+        f"The `x(1,0,0,{int(period)})` term is a seasonal autoregressive term at that lag — in effect "
+        "\"what was intensity at this time yesterday\". The non-seasonal models have no such term, so "
+        "beyond a few hours their forecasts decay toward the series mean and their error climbs past "
+        "the seasonal-naive benchmark."
+    )
+    return note
+
+
+def _calibration_note(results: dict[str, Any] | None, champion: str | None) -> str | None:
+    if not champion:
+        return None
+    rows = [
+        row
+        for row in ((results or {}).get("test_common_metrics") or [])
+        if isinstance(row, dict)
+        and row.get("group_type") == "overall"
+        and row.get("model_id") == champion
+        and row.get("coverage80") is not None
+    ]
+    if not rows:
+        return None
+    worst = min(rows, key=lambda row: float(row["coverage80"]))
+    return (
+        "**But its uncertainty bands are too narrow.** Point accuracy and interval calibration are "
+        f"different things: at horizon h{int(worst['horizon'])} the 80% intervals of `{champion}` cover "
+        f"only {float(worst['coverage80']):.1%} of outcomes against a nominal 80%. Several less accurate "
+        "models track 80% far more closely. Trust the recommended window more than the width of the band "
+        "drawn around it."
+    )
+
+
+def _render_model_guidance(root: Path, results: dict[str, Any] | None, model_id: str) -> None:
+    st.markdown("#### Which model is best?")
+    if not isinstance(results, dict):
+        st.caption("Recorded test metrics are unavailable, so no ranking can be shown.")
+        return
+
+    champion = results.get("forecast_champion")
+    simple = results.get("strongest_simple")
+    deployed = results.get("deployment_model")
+
+    notes = []
+    if champion:
+        notes.append(
+            f"**Most accurate:** `{champion}`. It has the lowest error at every horizon from "
+            "2 hours ahead (h4) out to 24 hours ahead (h48) — the range a deadline-constrained "
+            "job actually depends on. Only one slot ahead is it narrowly beaten."
+        )
+    if simple:
+        notes.append(
+            f"**Best simple baseline:** `{simple}`. Carrying the last reading forward costs nothing "
+            "to fit, and a full day out it still comes second only to the champion."
+        )
+    if deployed:
+        kind = (
+            "a baseline, not a fitted classical model"
+            if results.get("deployment_is_classical") is False
+            else "a fitted classical model"
+        )
+        notes.append(
+            f"**Deployed here:** `{deployed}` — {kind}. It is the least accurate of the three, "
+            "so the recommended window it produces is driven by the daily shape of the grid "
+            "rather than by forecast skill."
+        )
+    st.markdown("\n\n".join(f"- {note}" for note in notes))
+
+    seasonality = _seasonality_note(root)
+    if seasonality:
+        st.markdown(seasonality)
+    calibration = _calibration_note(results, champion)
+    if calibration:
+        st.markdown(calibration)
+
+    interpretation = results.get("h3_interpretation")
+    if interpretation:
+        st.caption(f"Recorded study conclusion: {interpretation}.")
+    st.caption(
+        "MASE is scaled against a seasonal-naive reference: below 1 beats it, above 1 is worse. "
+        "h1 is 30 minutes ahead and h48 is 24 hours ahead."
+    )
+    if model_id and champion and model_id != champion:
+        st.caption(f"You have `{model_id}` selected. For the lowest forecast error, choose `{champion}`.")
+
+    table = _test_leaderboard(results)
+    if not table.empty:
+        with st.expander("Recorded 2025 test accuracy by horizon"):
+            st.caption("Point accuracy as MASE. Lower is better; below 1 beats the seasonal-naive reference.")
+            st.dataframe(table, use_container_width=True, hide_index=True)
+            coverage = _test_leaderboard(
+                results, "coverage80", "Cover80", order=list(table["Model"])
+            )
+            if not coverage.empty:
+                st.caption(
+                    "Share of outcomes falling inside the 80% interval, in the same model order. "
+                    "Nominal is 0.80: below that the bands are too narrow, above it they are too wide."
+                )
+                st.dataframe(coverage, use_container_width=True, hide_index=True)
+
+
+def _render_simple(
+    root: Path,
+    config: dict[str, Any] | None,
+    results: dict[str, Any] | None,
+    test_results_verified: bool,
+    result_error: str | None,
+    model_options: list[str],
+    defaults: dict[str, float],
+) -> None:
+    st.title("GridShift")
+    st.caption("Choose a fitted model, then run the forecast.")
+
+    if config is None:
+        st.error("A readable study configuration is required.")
+        return
+
+    controls = st.columns([3, 1], vertical_alignment="bottom")
+    model_id = controls[0].selectbox(
+        "Fitted model",
+        options=model_options,
+        index=model_options.index(_preferred_model(results, model_options)),
+        key="simple_model",
+        disabled=IMPORT_ERROR is not None,
+    )
+    if controls[1].button(
+        "Run forecast",
+        type="primary",
+        use_container_width=True,
+        disabled=IMPORT_ERROR is not None,
+        key="simple_run",
+    ):
+        st.session_state["simple_ran"] = True
+
+    with st.expander("Job settings"):
+        setting_columns = st.columns(3)
+        origin_date = setting_columns[0].date_input(
+            "Origin date (UTC)", value=DEFAULT_ORIGIN_DATE, key="simple_origin_date"
+        )
+        origin_time = setting_columns[1].time_input(
+            "Origin time (UTC)", value=DEFAULT_ORIGIN_TIME, step=1800, key="simple_origin_time"
+        )
+        duration = setting_columns[2].number_input(
+            "Duration (hours)",
+            min_value=0.5,
+            max_value=48.0,
+            value=float(defaults["duration_hours"]),
+            step=0.5,
+            key="simple_duration",
+        )
+        slack = setting_columns[0].number_input(
+            "Slack after duration (hours)",
+            min_value=0.0,
+            max_value=48.0,
+            value=float(defaults["slack_hours"]),
+            step=0.5,
+            key="simple_slack",
+        )
+        power = setting_columns[1].number_input(
+            "IT power (kW)",
+            min_value=0.01,
+            max_value=100000.0,
+            value=float(defaults["power_kw"]),
+            step=0.1,
+            key="simple_power",
+        )
+        pue = setting_columns[2].number_input(
+            "PUE",
+            min_value=1.0,
+            max_value=5.0,
+            value=float(defaults["pue"]),
+            step=0.05,
+            key="simple_pue",
+        )
+
+    if not st.session_state.get("simple_ran"):
+        st.info("Press Run forecast to score the half-hour windows before this job's deadline.")
+        return
+
+    if Job is None or scheduling is None:
+        st.error(f"GridShift package is unavailable: {IMPORT_ERROR}")
+        return
+
+    try:
+        origin = pd.Timestamp(dt.datetime.combine(origin_date, origin_time), tz="UTC")
+        if grid_time is not None:
+            origin = grid_time(origin)
+    except (TypeError, ValueError) as exc:
+        st.error(f"Invalid origin: {exc}")
+        return
+
+    deadline = origin + pd.to_timedelta(float(duration) + float(slack), unit="h")
+    try:
+        job = Job(
+            id="dashboard-job",
+            release=origin,
+            duration_hours=float(duration),
+            deadline=deadline,
+            power_kw=float(power),
+            pue=float(pue),
+        )
+    except (TypeError, ValueError, OverflowError) as exc:
+        st.error(f"Job is infeasible: {exc}")
+        return
+
+    path, bounds, metadata, path_error, _ = _make_forecast(
+        root, config, origin, "Historical", model_id, test_results_verified, result_error
+    )
+    if path is None:
+        st.warning(
+            f"Forecast unavailable: {path_error or 'No stored path for this model and origin.'}"
+        )
+        return
+
+    decision = None
+    try:
+        decision = scheduling.recommend(job, path)
+    except Exception as exc:
+        st.warning(f"Scheduler could not rank this path: {type(exc).__name__}: {exc}")
+
+    scheduled = decision is not None and decision.status == "scheduled"
+    metrics = st.columns(3)
+    metrics[0].metric(
+        "Best start (UTC)",
+        decision.start.strftime("%Y-%m-%d %H:%M") if scheduled else "—",
+    )
+    metrics[1].metric(
+        "Predicted emissions",
+        f"{decision.predicted_grams:,.1f} gCO2" if scheduled else "—",
+    )
+    metrics[2].metric("Facility energy", f"{float(job.energy_kwh.sum()):.3f} kWh")
+
+    if scheduled:
+        st.success(
+            f"Run between {_format_utc(decision.start)} and {_format_utc(decision.finish)}."
+        )
+    elif decision is not None and decision.status == "infeasible":
+        st.error(f"No feasible window: {decision.reason}")
+    else:
+        st.warning("No carbon-ranked window is available for this origin and deadline.")
+
+    chart, interval_note = _plot_path(path, bounds, None, "Historical", show_retrospective_actual=False)
+    st.plotly_chart(chart, use_container_width=True)
+    st.markdown(
+        "**How to read this.** The solid line is the forecast mean carbon intensity for each "
+        "half-hour slot, in gCO2 per kWh. The teal band around it is the 80% prediction interval "
+        "and the wider grey band the 95% interval, so bands that widen to the right mean the model "
+        "is less sure further ahead. Low points on the line are cleaner slots: the scheduler scores "
+        "every window long enough to fit the job and finishing before the deadline, then picks the "
+        "one with the lowest predicted emissions."
+    )
+    st.caption(
+        f"Model: {path.model_id}. Issued {_format_utc(path.origin)}. "
+        f"Hard deadline: {_format_utc(deadline)}. {interval_note} "
+        "The bands describe single slots and cannot be added together to get an interval for the "
+        "whole job. Predicted operational CO2 from a forecast, not a measured or avoided-emissions result."
+    )
+    _render_model_guidance(root, results, model_id)
+
+    with st.expander("Forecast intervals and candidate windows"):
+        frame, _ = _forecast_frame(path, bounds, metadata)
+        st.dataframe(frame, use_container_width=True, hide_index=True)
+        try:
+            display = _candidate_display(
+                scheduling.candidates(job, path),
+                decision.start if scheduled else None,
+            )
+        except Exception as exc:
+            st.caption(f"Candidate windows unavailable: {type(exc).__name__}: {exc}")
+        else:
+            if not display.empty:
+                st.dataframe(display, use_container_width=True, hide_index=True)
+
+
 def main() -> None:
     st.set_page_config(
         page_title="GridShift",
@@ -1569,6 +1900,50 @@ def main() -> None:
             border-color: var(--grid-teal) !important;
         }
         .stApp button { color: var(--grid-ink) !important; }
+        .stApp [data-testid="stSelectbox"] > div > div {
+            background-color: #ffffff !important;
+            border-color: var(--grid-line) !important;
+        }
+        .stApp [data-testid="stSelectbox"] svg { fill: var(--grid-muted) !important; }
+        .stApp [data-testid="stExpander"] details {
+            background-color: #ffffff !important;
+            border: 1px solid var(--grid-line) !important;
+            border-radius: 6px;
+        }
+        .stApp [data-testid="stExpander"] summary {
+            background-color: #ffffff !important;
+            border-radius: 6px;
+        }
+        .stApp [data-testid="stExpander"] summary:hover { background-color: #eef4f4 !important; }
+        .stApp [data-testid="stMarkdownContainer"] code,
+        .stApp [data-testid="stMarkdownContainer"] strong code {
+            background-color: #eef4f4 !important;
+            color: var(--grid-teal) !important;
+        }
+        [data-testid="stSelectboxVirtualDropdown"] {
+            background-color: #ffffff !important;
+            border: 1px solid var(--grid-line) !important;
+        }
+        [data-testid="stSelectboxVirtualDropdown"] [role="option"],
+        [data-testid="stSelectboxVirtualDropdown"] [role="option"] * {
+            color: var(--grid-ink) !important;
+        }
+        [data-testid="stSelectboxVirtualDropdown"] [role="option"]:hover,
+        [data-testid="stSelectboxVirtualDropdown"] [role="option"][aria-selected="true"] {
+            background-color: #eef4f4 !important;
+        }
+        .stApp button[kind="primary"],
+        .stApp [data-testid="stBaseButton-primary"] {
+            background-color: var(--grid-teal) !important;
+            border-color: var(--grid-teal) !important;
+            color: #ffffff !important;
+        }
+        .stApp button[kind="primary"]:hover,
+        .stApp [data-testid="stBaseButton-primary"]:hover {
+            background-color: #0a6b65 !important;
+            border-color: #0a6b65 !important;
+            color: #ffffff !important;
+        }
         div[data-testid="stAlert"] {
             color: var(--grid-ink) !important;
             background: #eef4f4 !important;
@@ -1618,6 +1993,26 @@ def main() -> None:
         "pue": scheduling_config.get("pue", 1.2),
     }
     model_options = _model_options(ROOT, config, results, test_results_verified)
+
+    with st.sidebar:
+        research = st.toggle(
+            "Research mode",
+            value=False,
+            key="gridshift_research_mode",
+            help="Show the full evidence views: forecasts, model comparison, backtests, and provenance.",
+        )
+
+    if not research:
+        _render_simple(
+            ROOT,
+            config,
+            results,
+            test_results_verified,
+            result_error,
+            model_options,
+            defaults,
+        )
+        return
 
     with st.sidebar:
         st.markdown("### Workspace")
@@ -1674,15 +2069,7 @@ def main() -> None:
             step=0.05,
             key="gridshift_pue",
         )
-        preferred_model = None
-        if isinstance(results, dict):
-            preferred_model = (
-                results.get("deployment_model")
-                or results.get("forecast_champion")
-                or results.get("strongest_simple")
-            )
-        if not preferred_model or preferred_model not in model_options:
-            preferred_model = "calendar_mean" if "calendar_mean" in model_options else model_options[0]
+        preferred_model = _preferred_model(results, model_options)
         model = st.selectbox(
             "Forecast model",
             options=model_options,
