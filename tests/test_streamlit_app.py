@@ -26,7 +26,15 @@ def _app_test(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> AppTest:
         tmp_path / "configs",
     )
     monkeypatch.setenv("GRIDSHIFT_ROOT", str(tmp_path))
-    return AppTest.from_file(str(APP_FILE), default_timeout=20)
+    app = AppTest.from_file(str(APP_FILE), default_timeout=20)
+    app.session_state["gridshift_research_mode"] = True
+    return app
+
+
+def _simple_app_test(tmp_path: Path, monkeypatch: pytest.MonkeyPatch) -> AppTest:
+    app = _app_test(tmp_path, monkeypatch)
+    app.session_state["gridshift_research_mode"] = False
+    return app
 
 
 def _write_fake_frozen_results(root: Path) -> tuple[dict, Path]:
@@ -383,3 +391,35 @@ def test_non_schedule_views_remain_usable_without_results(
     assert app.title[0].value == "GridShift"
     if view == "Backtests":
         assert "not been produced" in _alert_text(app.warning)
+
+
+def test_simple_mode_waits_for_the_run_button_and_hides_the_research_views(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    from gridshift import live
+
+    calls: list[pd.Timestamp] = []
+    monkeypatch.setattr(live, "fetch_recent", lambda origin: calls.append(origin))
+    app = _simple_app_test(tmp_path, monkeypatch).run()
+
+    assert not app.exception
+    assert app.title[0].value == "GridShift"
+    assert [widget.label for widget in app.selectbox] == ["Fitted model"]
+    assert [widget.label for widget in app.button] == ["Run forecast"]
+    assert not any(widget.label == "View" for widget in app.radio)
+    assert "Press Run forecast" in _alert_text(app.info)
+    assert calls == []
+
+
+def test_simple_mode_run_button_scores_windows_without_a_forecast_store(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    app = _simple_app_test(tmp_path, monkeypatch).run()
+    next(widget for widget in app.button if widget.label == "Run forecast").click()
+    app = app.run()
+
+    assert not app.exception
+    assert "Press Run forecast" not in _alert_text(app.info)
+    assert "Forecast unavailable" in _alert_text(app.warning)
