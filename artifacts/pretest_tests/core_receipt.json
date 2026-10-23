@@ -1,0 +1,8 @@
+{
+  "errors": 0,
+  "failures": 0,
+  "junit_sha256": "2fe67307d5e8963cde73c08f3471af6be8cbbd7b15a536f815aad8b6eda0ee9c",
+  "passed": true,
+  "software_hash": "16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0",
+  "tests": 93
+}

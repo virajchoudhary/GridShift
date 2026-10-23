@@ -1,0 +1,2943 @@
+{
+  "chunks": [
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:23 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-01-01_2022-01-08.json.gz",
+      "raw_hash": "988922a1afb23c3aac69c843c291e52bf6fc0cd10ceb97f546beeb08fda35edb",
+      "retrieved_at_utc": "2026-10-22T17:06:23.636204+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-01-01T00:00Z/2022-01-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:24 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-01-08_2022-01-15.json.gz",
+      "raw_hash": "198935279c1737f384b42f79b38e931047c128019862aa12aa81039dc31d6669",
+      "retrieved_at_utc": "2026-10-22T17:06:24.604143+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-01-08T00:00Z/2022-01-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:24 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-01-15_2022-01-22.json.gz",
+      "raw_hash": "c84caa5c74a8a17e435df8a47c0e1c817f6a0d566d4e7dfb7df60faba812dc2a",
+      "retrieved_at_utc": "2026-10-22T17:06:25.533137+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-01-15T00:00Z/2022-01-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:25 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-01-22_2022-01-29.json.gz",
+      "raw_hash": "7ed777c8ba0542c004acf2c8eb0ea74b0fa53d5f73c72dcead9161152cf33106",
+      "retrieved_at_utc": "2026-10-22T17:06:26.511425+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-01-22T00:00Z/2022-01-29T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:27 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-01-29_2022-02-05.json.gz",
+      "raw_hash": "f52d4467386138d188df1bbc9340ab9dea897ae108ca6b9ccd1db6e3ac6c500b",
+      "retrieved_at_utc": "2026-10-22T17:06:28.056897+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-01-29T00:00Z/2022-02-05T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:28 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-02-05_2022-02-12.json.gz",
+      "raw_hash": "47faae116bc65c699ade32b2e0603b0c4751c917241d9371d5c73cc72630ee52",
+      "retrieved_at_utc": "2026-10-22T17:06:29.440647+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-02-05T00:00Z/2022-02-12T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:30 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-02-12_2022-02-19.json.gz",
+      "raw_hash": "9ea020d24a7aa52414a24c1251292e41dd0f0a43a7c2cc94494872b2a5f403f6",
+      "retrieved_at_utc": "2026-10-22T17:06:30.772699+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-02-12T00:00Z/2022-02-19T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:31 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-02-19_2022-02-26.json.gz",
+      "raw_hash": "dc896a6b7219bad5caceae059482455d1fcfb56b8647d2a9904c8f8718c6db3a",
+      "retrieved_at_utc": "2026-10-22T17:06:32.230470+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-02-19T00:00Z/2022-02-26T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:32 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-02-26_2022-03-05.json.gz",
+      "raw_hash": "a99c83a77c99c1c9a6711c692d9e8c9a9cec049561134584bcc57fa6717b58ab",
+      "retrieved_at_utc": "2026-10-22T17:06:33.510136+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-02-26T00:00Z/2022-03-05T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:33 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-03-05_2022-03-12.json.gz",
+      "raw_hash": "b42329004e71abf4c9663b16f934959975d2425768deef382c036312fff5aa0f",
+      "retrieved_at_utc": "2026-10-22T17:06:34.475685+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-03-05T00:00Z/2022-03-12T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:35 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-03-12_2022-03-19.json.gz",
+      "raw_hash": "67e3b46a614aeda65d1d634004f57065fdc262ce572b5d5b91daf52bbe9396cb",
+      "retrieved_at_utc": "2026-10-22T17:06:35.824565+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-03-12T00:00Z/2022-03-19T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:36 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-03-19_2022-03-26.json.gz",
+      "raw_hash": "e96bb32d934e5a30d4ba09b4faeab299e07da9d0ac82e300e52ef6ade59e97ce",
+      "retrieved_at_utc": "2026-10-22T17:06:37.235436+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-03-19T00:00Z/2022-03-26T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:38 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-03-26_2022-04-02.json.gz",
+      "raw_hash": "947135ce5367685a05a3586fbd9a12585150f17f33d13c2b0e2e209ea8c774e2",
+      "retrieved_at_utc": "2026-10-22T17:06:38.780370+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-03-26T00:00Z/2022-04-02T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:39 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-04-02_2022-04-09.json.gz",
+      "raw_hash": "5eec2638c22799d37b013fc12a0652d0f34efdbeef47899b1c982f79e98eeecd",
+      "retrieved_at_utc": "2026-10-22T17:06:40.120047+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-04-02T00:00Z/2022-04-09T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:40 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-04-09_2022-04-16.json.gz",
+      "raw_hash": "157be310f4f3a3fd01d371f23238f747813d12bc6d7f81e232c70e7103ef7167",
+      "retrieved_at_utc": "2026-10-22T17:06:41.393474+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-04-09T00:00Z/2022-04-16T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:42 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-04-16_2022-04-23.json.gz",
+      "raw_hash": "cea6b6aff763e3bceefe59e03d24c3b77d6e60b8427e35725ce874b22141a63d",
+      "retrieved_at_utc": "2026-10-22T17:06:42.638999+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-04-16T00:00Z/2022-04-23T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:43 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-04-23_2022-04-30.json.gz",
+      "raw_hash": "fb7dc307006f6a4484e3d1ef09118cd350b7b9f639a9747bd7b4e5afebc0ac29",
+      "retrieved_at_utc": "2026-10-22T17:06:43.721704+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-04-23T00:00Z/2022-04-30T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:44 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-04-30_2022-05-07.json.gz",
+      "raw_hash": "572f19826701b1628cc73f690b0a7abcc4722c3d127532c637bd38f88ac8b4d0",
+      "retrieved_at_utc": "2026-10-22T17:06:44.712821+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-04-30T00:00Z/2022-05-07T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:44 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-05-07_2022-05-14.json.gz",
+      "raw_hash": "3bc1712298ff888388e4c79dccd37ba4d4deed81a3bf0a82b1fd057a7bf833b6",
+      "retrieved_at_utc": "2026-10-22T17:06:45.264920+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-05-07T00:00Z/2022-05-14T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:45 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-05-14_2022-05-21.json.gz",
+      "raw_hash": "5108cd6313cf40a8a2b17d4336f6d2081452a27d71223f85fe44b29958560fd2",
+      "retrieved_at_utc": "2026-10-22T17:06:46.205609+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-05-14T00:00Z/2022-05-21T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:46 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-05-21_2022-05-28.json.gz",
+      "raw_hash": "c6ac1191bf2ce7d8452062cca1ff576d4bd97afbc68b78db49032f8bfe5f8336",
+      "retrieved_at_utc": "2026-10-22T17:06:47.095473+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-05-21T00:00Z/2022-05-28T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:47 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-05-28_2022-06-04.json.gz",
+      "raw_hash": "bb534b993d07979fd61593ef5bb296af6949b8eb9988691eabc0f3447bed9eb2",
+      "retrieved_at_utc": "2026-10-22T17:06:47.975940+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-05-28T00:00Z/2022-06-04T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:48 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-06-04_2022-06-11.json.gz",
+      "raw_hash": "9c3d4bd20a85ec0fb04fc2c30803d5db72b011842bfe10db03324509fdd88acc",
+      "retrieved_at_utc": "2026-10-22T17:06:48.922781+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-06-04T00:00Z/2022-06-11T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:49 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-06-11_2022-06-18.json.gz",
+      "raw_hash": "0c5881c32f5c55e985ca1af695bec3cf0c4c0c383cf68ae7a69f055f7d5332ef",
+      "retrieved_at_utc": "2026-10-22T17:06:49.825720+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-06-11T00:00Z/2022-06-18T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:50 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-06-18_2022-06-25.json.gz",
+      "raw_hash": "c80a41628ff5716c6d7b515ec1649f8c798499bc8a344700082deb27b3b5ee14",
+      "retrieved_at_utc": "2026-10-22T17:06:50.827361+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-06-18T00:00Z/2022-06-25T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:51 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-06-25_2022-07-02.json.gz",
+      "raw_hash": "cbe3e980b15a3c78323bffde291b733bdd6efb982dabcb43846d538d9aaa189a",
+      "retrieved_at_utc": "2026-10-22T17:06:51.824752+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-06-25T00:00Z/2022-07-02T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:52 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-07-02_2022-07-09.json.gz",
+      "raw_hash": "ca2ab38541bfc6889972957ba0e33726937ff27ea174658c9edcac6aa1ba5180",
+      "retrieved_at_utc": "2026-10-22T17:06:52.777559+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-07-02T00:00Z/2022-07-09T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:52 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-07-09_2022-07-16.json.gz",
+      "raw_hash": "7d1e27616b71a1fd075b6b4c087cc6709ebb55103a529ef2e8c4cadbe9fa065e",
+      "retrieved_at_utc": "2026-10-22T17:06:53.347349+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-07-09T00:00Z/2022-07-16T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:53 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-07-16_2022-07-23.json.gz",
+      "raw_hash": "268d6c6238a32f132a94ced09d470683ecac9b3f3f2a25bc8f538574c7ba5f5a",
+      "retrieved_at_utc": "2026-10-22T17:06:53.894181+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-07-16T00:00Z/2022-07-23T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:54 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-07-23_2022-07-30.json.gz",
+      "raw_hash": "e0accb80e64731bbbf6a975d9fc3787b8ece4f8c8cecc0d4b48675c887fd6970",
+      "retrieved_at_utc": "2026-10-22T17:06:54.806252+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-07-23T00:00Z/2022-07-30T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:55 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-07-30_2022-08-06.json.gz",
+      "raw_hash": "de9c614aa057655b987072975561b1ff74d307cb014996d4658949bfc5ac66bf",
+      "retrieved_at_utc": "2026-10-22T17:06:55.681983+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-07-30T00:00Z/2022-08-06T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:55 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-08-06_2022-08-13.json.gz",
+      "raw_hash": "80db21c3591d678fab3f99cd6be15e56e388c70257bde19b26f787ef9eeded27",
+      "retrieved_at_utc": "2026-10-22T17:06:56.547661+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-08-06T00:00Z/2022-08-13T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:56 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-08-13_2022-08-20.json.gz",
+      "raw_hash": "f3188c09fb3b4e2293eda67ceb05107b3fbeed8a298f3f49e4f2a15ee3c694f8",
+      "retrieved_at_utc": "2026-10-22T17:06:57.431311+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-08-13T00:00Z/2022-08-20T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:57 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-08-20_2022-08-27.json.gz",
+      "raw_hash": "e09f884c350e5adee9063b0cbff71ffb4f2650c69d4d8965451359dd32e53699",
+      "retrieved_at_utc": "2026-10-22T17:06:58.427883+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-08-20T00:00Z/2022-08-27T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:58 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-08-27_2022-09-03.json.gz",
+      "raw_hash": "863e38ca26ff01f782227ce3c14412f5be30868cb4d89731d595e52c659a5355",
+      "retrieved_at_utc": "2026-10-22T17:06:59.343933+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-08-27T00:00Z/2022-09-03T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:06:59 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-09-03_2022-09-10.json.gz",
+      "raw_hash": "0a8ab445a2df5fc7505512f54d4ba1c6ebc4556d589dc4c3ba6d9df91ecc003c",
+      "retrieved_at_utc": "2026-10-22T17:07:00.284051+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-09-03T00:00Z/2022-09-10T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:00 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-09-10_2022-09-17.json.gz",
+      "raw_hash": "55ab3b3112c8f6a0d87e08aea0f8d9ebd48c7159e65463be0c3a0c57b98b816d",
+      "retrieved_at_utc": "2026-10-22T17:07:01.344498+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-09-10T00:00Z/2022-09-17T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:01 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-09-17_2022-09-24.json.gz",
+      "raw_hash": "b7b8a20774c4808de8e95a1645bdd2ac1b77d1774c2a6e4fd59a5e2ffc4ac7e6",
+      "retrieved_at_utc": "2026-10-22T17:07:02.299936+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-09-17T00:00Z/2022-09-24T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:02 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-09-24_2022-10-01.json.gz",
+      "raw_hash": "ad550a08a1019814c3dc4702201fd40a16035310ce4dcf5b8840316238cad034",
+      "retrieved_at_utc": "2026-10-22T17:07:03.200747+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-09-24T00:00Z/2022-10-01T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:05 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-10-01_2022-10-08.json.gz",
+      "raw_hash": "b0675ab4e8ae398ffa384093ef7bb4b6b71ff3ef3b76f4f4a1bd53e00638ce4a",
+      "retrieved_at_utc": "2026-10-22T17:07:05.909984+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-10-01T00:00Z/2022-10-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:06 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-10-08_2022-10-15.json.gz",
+      "raw_hash": "a761ed0cc6b174611ad77c963d80fb3b5ade1cddd6beeab65e18fc3d5a1745fc",
+      "retrieved_at_utc": "2026-10-22T17:07:06.802569+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-10-08T00:00Z/2022-10-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:07 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-10-15_2022-10-22.json.gz",
+      "raw_hash": "31ddad258aaabab10206850cc6b832ef74881fa563463f05c9234b5c3ac73a95",
+      "retrieved_at_utc": "2026-10-22T17:07:07.702734+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-10-15T00:00Z/2022-10-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:08 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-10-22_2022-10-29.json.gz",
+      "raw_hash": "32410beeae3c7ece84d1d5faa9379f8de726521cc8995e67b0990ac7b58d5efb",
+      "retrieved_at_utc": "2026-10-22T17:07:08.644839+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-10-22T00:00Z/2022-10-29T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:08 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-10-29_2022-11-05.json.gz",
+      "raw_hash": "db0aab7ebd1b5e43f1cb1af2d5a374a3c8e3059e58a2994e5d771200d4b304d4",
+      "retrieved_at_utc": "2026-10-22T17:07:09.544296+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-10-29T00:00Z/2022-11-05T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:10 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-11-05_2022-11-12.json.gz",
+      "raw_hash": "fce3929b93b8ebb418138a385c7965b2fa5f0e683797482cea7060f3087fec21",
+      "retrieved_at_utc": "2026-10-22T17:07:10.683541+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-11-05T00:00Z/2022-11-12T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:11 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-11-12_2022-11-19.json.gz",
+      "raw_hash": "d11dd0854a4291c25fe549634af8449ac218f642dd28c4222f7661f2a9036acc",
+      "retrieved_at_utc": "2026-10-22T17:07:11.675422+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-11-12T00:00Z/2022-11-19T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:12 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-11-19_2022-11-26.json.gz",
+      "raw_hash": "ffdc6aec03a719fff0315df934a317327cf5cfb690527fabb753acd4f04e8751",
+      "retrieved_at_utc": "2026-10-22T17:07:12.784779+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-11-19T00:00Z/2022-11-26T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:15 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-11-26_2022-12-03.json.gz",
+      "raw_hash": "9f01fa38b22c45e2c36fbd4e9cb46017ddc0ff417a6dbbfac806a3c27233887d",
+      "retrieved_at_utc": "2026-10-22T17:07:16.566258+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-11-26T00:00Z/2022-12-03T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:17 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-12-03_2022-12-10.json.gz",
+      "raw_hash": "cb3b47c732c82bc6e74145a82193e06dc6fa59471023d9d249b538153a5340fa",
+      "retrieved_at_utc": "2026-10-22T17:07:17.677095+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-12-03T00:00Z/2022-12-10T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:18 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-12-10_2022-12-17.json.gz",
+      "raw_hash": "68a837597e7f2eb3b6adf10f6b5aa88176ef1a696a183dca8ebbfbe591a27882",
+      "retrieved_at_utc": "2026-10-22T17:07:18.612270+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-12-10T00:00Z/2022-12-17T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:18 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-12-17_2022-12-24.json.gz",
+      "raw_hash": "19f9ae70846a8ce3e2e8c6e6b05bf5b42374f3ae0967e2c2383a6f525720448f",
+      "retrieved_at_utc": "2026-10-22T17:07:19.417419+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-12-17T00:00Z/2022-12-24T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:19 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-12-24_2022-12-31.json.gz",
+      "raw_hash": "4161a3cd3c9b71225d2727d015867ff3a285fea5b2c0babc75159440177180a8",
+      "retrieved_at_utc": "2026-10-22T17:07:20.366902+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-12-24T00:00Z/2022-12-31T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:20 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2022-12-31_2023-01-07.json.gz",
+      "raw_hash": "e55090cf637840ed4d3833c75841e2a42ff849d42515eee4a71892d63dd3ba4f",
+      "retrieved_at_utc": "2026-10-22T17:07:21.330613+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2022-12-31T00:00Z/2023-01-07T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:21 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-01-07_2023-01-14.json.gz",
+      "raw_hash": "fa4b6f30cc06def16e45d1d3899830328c0907b5361964a00f802b9982a5dc8f",
+      "retrieved_at_utc": "2026-10-22T17:07:22.265372+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-01-07T00:00Z/2023-01-14T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:22 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-01-14_2023-01-21.json.gz",
+      "raw_hash": "d179b5e58b388fb3fd8ca7b467f4a039b399c9f152bd50f083f2c7da085c4eeb",
+      "retrieved_at_utc": "2026-10-22T17:07:22.865210+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-01-14T00:00Z/2023-01-21T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:22 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-01-21_2023-01-28.json.gz",
+      "raw_hash": "0bfd37392309375c567639631ca4bcd8bb01c27c1cd81099a82319702f7c0076",
+      "retrieved_at_utc": "2026-10-22T17:07:23.457018+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-01-21T00:00Z/2023-01-28T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:23 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-01-28_2023-02-04.json.gz",
+      "raw_hash": "6dd47408b93dbfd02dca5322d8f340dcedeb608a70a71a5546f0bf051d60a953",
+      "retrieved_at_utc": "2026-10-22T17:07:24.431928+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-01-28T00:00Z/2023-02-04T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:24 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-02-04_2023-02-11.json.gz",
+      "raw_hash": "de403eb0fe0d4f123bfc796cbcaa339950518feda868495513110f8e21c28108",
+      "retrieved_at_utc": "2026-10-22T17:07:25.468096+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-02-04T00:00Z/2023-02-11T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:25 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-02-11_2023-02-18.json.gz",
+      "raw_hash": "30d85ff422c6aaabb14f5182045cb8efca5f8b88284138f2cc4d02443bdc2203",
+      "retrieved_at_utc": "2026-10-22T17:07:26.022280+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-02-11T00:00Z/2023-02-18T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:26 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-02-18_2023-02-25.json.gz",
+      "raw_hash": "86603b7c73be55b619ff5be46eda46100b4050ae96b627bba1da35314e1843f9",
+      "retrieved_at_utc": "2026-10-22T17:07:26.607506+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-02-18T00:00Z/2023-02-25T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:27 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-02-25_2023-03-04.json.gz",
+      "raw_hash": "5d2f8f460360879fa19946a28c2acd22ee37dc62e4f129d7fc09a4846ff4b616",
+      "retrieved_at_utc": "2026-10-22T17:07:27.643106+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-02-25T00:00Z/2023-03-04T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:27 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-03-04_2023-03-11.json.gz",
+      "raw_hash": "b53c060fccf02b39bf33a667e1bec029d91826938cb14a3a7d4389a1462eb927",
+      "retrieved_at_utc": "2026-10-22T17:07:28.564802+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-03-04T00:00Z/2023-03-11T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:28 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-03-11_2023-03-18.json.gz",
+      "raw_hash": "80a21183dcf2de6f87c2e4ab2c3cb3bc6f09d56e559627f7ab4c3a3b95f16ef0",
+      "retrieved_at_utc": "2026-10-22T17:07:29.460201+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-03-11T00:00Z/2023-03-18T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:30 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-03-18_2023-03-25.json.gz",
+      "raw_hash": "f7016b138ae1d16c71451502cf124015073300820f2d97180b58ff7494b5bb9f",
+      "retrieved_at_utc": "2026-10-22T17:07:30.686641+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-03-18T00:00Z/2023-03-25T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:30 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-03-25_2023-04-01.json.gz",
+      "raw_hash": "ebb83c5dbb0b231d98f3b2c10cbe46d6984db4d75deba01efe1887df55fcdd5f",
+      "retrieved_at_utc": "2026-10-22T17:07:31.245937+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-03-25T00:00Z/2023-04-01T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:31 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-04-01_2023-04-08.json.gz",
+      "raw_hash": "874044e4a54bed128f6b0f75eab26c01be2f3f21764bf4022bda3c756d8993e5",
+      "retrieved_at_utc": "2026-10-22T17:07:32.231294+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-04-01T00:00Z/2023-04-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:32 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-04-08_2023-04-15.json.gz",
+      "raw_hash": "9d96424858021e781dbe147be3734a7138cd8a46d72df6899ae75159d009bfc4",
+      "retrieved_at_utc": "2026-10-22T17:07:33.118133+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-04-08T00:00Z/2023-04-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:33 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-04-15_2023-04-22.json.gz",
+      "raw_hash": "fa830053a71619ffd6b90d476f5b674251b2f4b0d063a28b5fe2e0625c940bc0",
+      "retrieved_at_utc": "2026-10-22T17:07:34.001455+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-04-15T00:00Z/2023-04-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:34 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-04-22_2023-04-29.json.gz",
+      "raw_hash": "a9db808962756cb1868fef9f34de9162fec33445b3377ed47b2b7a0c036925cc",
+      "retrieved_at_utc": "2026-10-22T17:07:34.944879+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-04-22T00:00Z/2023-04-29T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:35 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-04-29_2023-05-06.json.gz",
+      "raw_hash": "b33a885a081131ed11d47c2a5aa021054a6351face7e8dc2e8d1cf9baa9a8fbe",
+      "retrieved_at_utc": "2026-10-22T17:07:35.848351+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-04-29T00:00Z/2023-05-06T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:36 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-05-06_2023-05-13.json.gz",
+      "raw_hash": "65a142d2dd9901c4af9b8b0f3340b0e294ae3860d93897469d1acecf171fb56e",
+      "retrieved_at_utc": "2026-10-22T17:07:36.778817+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-05-06T00:00Z/2023-05-13T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:37 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-05-13_2023-05-20.json.gz",
+      "raw_hash": "b929c736fb324fbced4bb6ce538ea73a7c4dc8a8d5e1d2ee0f7cba9e4133cd9c",
+      "retrieved_at_utc": "2026-10-22T17:07:37.728025+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-05-13T00:00Z/2023-05-20T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:38 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-05-20_2023-05-27.json.gz",
+      "raw_hash": "287bcbe66cfd84aad4615250f42d846e3535266843a47d2461ef36532c698759",
+      "retrieved_at_utc": "2026-10-22T17:07:38.802579+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-05-20T00:00Z/2023-05-27T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:39 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-05-27_2023-06-03.json.gz",
+      "raw_hash": "271d7dbc23fc62c30d6a8d3652b8bddc2fcb9d0f75e9093da213a509ff82e61b",
+      "retrieved_at_utc": "2026-10-22T17:07:39.802893+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-05-27T00:00Z/2023-06-03T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:40 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-06-03_2023-06-10.json.gz",
+      "raw_hash": "5a003f3235421cf8c2cd78d978220572b9f53c86086b6f0a755d9d761a9c392a",
+      "retrieved_at_utc": "2026-10-22T17:07:40.773037+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-06-03T00:00Z/2023-06-10T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:41 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-06-10_2023-06-17.json.gz",
+      "raw_hash": "2908dc0275a13f5b75fa07cece9a0b391398bdfc6de6530a2bac20752c73abcd",
+      "retrieved_at_utc": "2026-10-22T17:07:41.748204+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-06-10T00:00Z/2023-06-17T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:42 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-06-17_2023-06-24.json.gz",
+      "raw_hash": "12e129f661e2cc92d4ec2889683c9df3824415cca1761cef122ec6174c339f6d",
+      "retrieved_at_utc": "2026-10-22T17:07:42.948119+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-06-17T00:00Z/2023-06-24T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:45 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-06-24_2023-07-01.json.gz",
+      "raw_hash": "86cc31bc833d4a881684bcd8f0904b59f0df5dcd3ffa019fc0cabc9ef096f755",
+      "retrieved_at_utc": "2026-10-22T17:07:46.125305+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-06-24T00:00Z/2023-07-01T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:46 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-07-01_2023-07-08.json.gz",
+      "raw_hash": "9e2735831a18c9e38c07c05c76357bb0bc769c725ca0a71b42d8285c45b8185a",
+      "retrieved_at_utc": "2026-10-22T17:07:47.338016+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-07-01T00:00Z/2023-07-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:47 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-07-08_2023-07-15.json.gz",
+      "raw_hash": "b0156e6195f29c2663836dc0983a575f653570aaced85382ade102ac70c26ca1",
+      "retrieved_at_utc": "2026-10-22T17:07:48.288488+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-07-08T00:00Z/2023-07-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:48 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-07-15_2023-07-22.json.gz",
+      "raw_hash": "ad2dd0e304a23c2df7a8b9b2e8688acb789f37d7ab214499670df41ffc3c7157",
+      "retrieved_at_utc": "2026-10-22T17:07:49.379661+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-07-15T00:00Z/2023-07-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:49 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-07-22_2023-07-29.json.gz",
+      "raw_hash": "7d409b063e0638486b7a26f468f69428dc15111b57ddf9f8daacfd78905c3231",
+      "retrieved_at_utc": "2026-10-22T17:07:50.477695+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-07-22T00:00Z/2023-07-29T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:51 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-07-29_2023-08-05.json.gz",
+      "raw_hash": "d144ad2d5cb0d6effd6443fa7b183b46504bf79c2d7d921fdfbac383e1b21ba6",
+      "retrieved_at_utc": "2026-10-22T17:07:51.599912+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-07-29T00:00Z/2023-08-05T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:51 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-08-05_2023-08-12.json.gz",
+      "raw_hash": "c8475f98fc36189bbec0677b9cfcf2ef8cd0d808973ca68e306638fe69bb2f1e",
+      "retrieved_at_utc": "2026-10-22T17:07:52.596230+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-08-05T00:00Z/2023-08-12T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:53 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-08-12_2023-08-19.json.gz",
+      "raw_hash": "6de4a43d2ea64e160c0794b253cbddd613c58fcd94baf831462fe37755752e31",
+      "retrieved_at_utc": "2026-10-22T17:07:53.629835+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-08-12T00:00Z/2023-08-19T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:54 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-08-19_2023-08-26.json.gz",
+      "raw_hash": "c03bac7c20b70c18a44173c652bf8966c3ca7a2830f23788cea98e7c1ecb8d14",
+      "retrieved_at_utc": "2026-10-22T17:07:54.836801+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-08-19T00:00Z/2023-08-26T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:55 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-08-26_2023-09-02.json.gz",
+      "raw_hash": "6f9878626e54869461bd6e5e17303386f5b544f0880ea42ee561cea3bf2a6ca1",
+      "retrieved_at_utc": "2026-10-22T17:07:55.917324+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-08-26T00:00Z/2023-09-02T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:56 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-09-02_2023-09-09.json.gz",
+      "raw_hash": "df5c87637b76e8688a6be8fd74b5c3ed46a31ff8fbe6e1b217180c485349f2ad",
+      "retrieved_at_utc": "2026-10-22T17:07:56.848644+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-09-02T00:00Z/2023-09-09T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:57 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-09-09_2023-09-16.json.gz",
+      "raw_hash": "0ddbe62c31d1f6003209a371991ceca4d5e653c64089de20545f5a689bd30f22",
+      "retrieved_at_utc": "2026-10-22T17:07:57.772468+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-09-09T00:00Z/2023-09-16T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:58 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-09-16_2023-09-23.json.gz",
+      "raw_hash": "1d3ae26910585e14b6176b339ae75c52f5097d0f82e0f11317f22dd586f878a0",
+      "retrieved_at_utc": "2026-10-22T17:07:58.924695+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-09-16T00:00Z/2023-09-23T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:07:59 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-09-23_2023-09-30.json.gz",
+      "raw_hash": "6b0b1571d64b11d4ad7779afe595d5ae65bb19ea0f23eee35c58096c47ae9879",
+      "retrieved_at_utc": "2026-10-22T17:07:59.903906+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-09-23T00:00Z/2023-09-30T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:00 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-09-30_2023-10-07.json.gz",
+      "raw_hash": "8b0e17596999a2aedfa02ebb0a20553cb49b23e54c19a7090b6d2e99809f8fc6",
+      "retrieved_at_utc": "2026-10-22T17:08:00.871100+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-09-30T00:00Z/2023-10-07T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:01 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-10-07_2023-10-14.json.gz",
+      "raw_hash": "497087d793f260e76931dab18f4026aa9d3c0b3c4d9eee64043cbd7422271ff7",
+      "retrieved_at_utc": "2026-10-22T17:08:01.839036+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-10-07T00:00Z/2023-10-14T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:02 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-10-14_2023-10-21.json.gz",
+      "raw_hash": "389f0a948fb370998a4b636c160d99e8a4c58b4485331a5f73b336d885ecc322",
+      "retrieved_at_utc": "2026-10-22T17:08:02.818860+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-10-14T00:00Z/2023-10-21T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:03 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-10-21_2023-10-28.json.gz",
+      "raw_hash": "5c0c947664ba1bd2e569686f1c34884d2466c21c9956fc1a43ec5ffbe1628508",
+      "retrieved_at_utc": "2026-10-22T17:08:03.527972+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-10-21T00:00Z/2023-10-28T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:06 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-10-28_2023-11-04.json.gz",
+      "raw_hash": "91fef5b849d9e71ef723560285557ef2a824745641bc2c50ecee0afbb682deee",
+      "retrieved_at_utc": "2026-10-22T17:08:06.758544+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-10-28T00:00Z/2023-11-04T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:07 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-11-04_2023-11-11.json.gz",
+      "raw_hash": "dd9333447ecbdedc2608c8ab691227f70849e1547b5d81b8fd3a48c4cbff4e9e",
+      "retrieved_at_utc": "2026-10-22T17:08:07.736967+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-11-04T00:00Z/2023-11-11T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:08 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-11-11_2023-11-18.json.gz",
+      "raw_hash": "82df350845ee79b007d0815e7d1371894ea623b1e4c82f93022691fd267f3971",
+      "retrieved_at_utc": "2026-10-22T17:08:08.637333+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-11-11T00:00Z/2023-11-18T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:08 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-11-18_2023-11-25.json.gz",
+      "raw_hash": "db89c62312f7d360fad54250878471b94b8c4ec1587b98c371f3dc0ce65955e7",
+      "retrieved_at_utc": "2026-10-22T17:08:09.582437+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-11-18T00:00Z/2023-11-25T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:09 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-11-25_2023-12-02.json.gz",
+      "raw_hash": "b2f1d56d63ed84db983adee641a57664b3cd3943a949238813bde2bde2d10e1a",
+      "retrieved_at_utc": "2026-10-22T17:08:10.533252+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-11-25T00:00Z/2023-12-02T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:10 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-12-02_2023-12-09.json.gz",
+      "raw_hash": "c7d2a49f392ebc7b1d81be74eb5705dd6d1fe237c5fada2c2414afd5d2330dd6",
+      "retrieved_at_utc": "2026-10-22T17:08:11.447021+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-12-02T00:00Z/2023-12-09T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:11 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-12-09_2023-12-16.json.gz",
+      "raw_hash": "3cf59025199e6f9dceba9e6cf427f43bd7c8d7560f34225bb9361e4b89277f42",
+      "retrieved_at_utc": "2026-10-22T17:08:12.363116+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-12-09T00:00Z/2023-12-16T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:12 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-12-16_2023-12-23.json.gz",
+      "raw_hash": "97ba1271a70ae05f7f5a7c9adcc38e83b187e564ca700b21d24b57b9d3b503aa",
+      "retrieved_at_utc": "2026-10-22T17:08:13.329092+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-12-16T00:00Z/2023-12-23T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:13 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-12-23_2023-12-30.json.gz",
+      "raw_hash": "2442594997e026b7ad2aba1a895cea4c877db88043afc293163428d558c79d4d",
+      "retrieved_at_utc": "2026-10-22T17:08:14.301269+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-12-23T00:00Z/2023-12-30T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:14 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2023-12-30_2024-01-06.json.gz",
+      "raw_hash": "b3a948d30780249c55d41d0c208d4fab8cfff3d1ece23d918c3296c1c189607c",
+      "retrieved_at_utc": "2026-10-22T17:08:15.260726+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2023-12-30T00:00Z/2024-01-06T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:15 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-01-06_2024-01-13.json.gz",
+      "raw_hash": "40b8f68f2d4769a050703d92fb7f1bc45316b786e10bd9ff8d8abcd1563efc98",
+      "retrieved_at_utc": "2026-10-22T17:08:16.219249+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-01-06T00:00Z/2024-01-13T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:16 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-01-13_2024-01-20.json.gz",
+      "raw_hash": "ffcbaab50554da7428bc1a204380e6a6d5760033f638aaba7629e01e015712eb",
+      "retrieved_at_utc": "2026-10-22T17:08:17.175558+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-01-13T00:00Z/2024-01-20T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:17 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-01-20_2024-01-27.json.gz",
+      "raw_hash": "0537d2a1223c689e3e07f639e3585565336322c4eba94c51ff6eded145011a5f",
+      "retrieved_at_utc": "2026-10-22T17:08:18.105768+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-01-20T00:00Z/2024-01-27T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:18 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-01-27_2024-02-03.json.gz",
+      "raw_hash": "47d0b59e77e41c7b67874a77959521cc3ae44ca46e49570b40290124d6f46f40",
+      "retrieved_at_utc": "2026-10-22T17:08:19.053474+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-01-27T00:00Z/2024-02-03T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:19 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-02-03_2024-02-10.json.gz",
+      "raw_hash": "fe5189d680355adf42c905ec9eeed1c53cae4d0972e8d7f6b6ce92d7b9fb9bed",
+      "retrieved_at_utc": "2026-10-22T17:08:19.971848+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-02-03T00:00Z/2024-02-10T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:20 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-02-10_2024-02-17.json.gz",
+      "raw_hash": "9899a841444f6544586031f09961e8aed604cc495339a3e78ae306dc9a369727",
+      "retrieved_at_utc": "2026-10-22T17:08:21.020381+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-02-10T00:00Z/2024-02-17T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:21 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-02-17_2024-02-24.json.gz",
+      "raw_hash": "5cc172fd7a0bf3c65f26170aa7a0ccedddba84c8ec99ef198d7b5c56227b27f5",
+      "retrieved_at_utc": "2026-10-22T17:08:21.989296+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-02-17T00:00Z/2024-02-24T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:22 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-02-24_2024-03-02.json.gz",
+      "raw_hash": "c4ca4de8fcbb996d2ac9c834f78267165112b5c763369d1e82f1506ff64b410a",
+      "retrieved_at_utc": "2026-10-22T17:08:22.588174+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-02-24T00:00Z/2024-03-02T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:22 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-03-02_2024-03-09.json.gz",
+      "raw_hash": "9c900d04ddd8e5f3b5b32579daf3f4b764bc14a9524919d771bf1a5e004afbd5",
+      "retrieved_at_utc": "2026-10-22T17:08:23.482343+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-03-02T00:00Z/2024-03-09T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:23 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-03-09_2024-03-16.json.gz",
+      "raw_hash": "936d68c069abd44c5089f44b1e98de6f10307751ac0767ba37ea341054148b70",
+      "retrieved_at_utc": "2026-10-22T17:08:24.101411+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-03-09T00:00Z/2024-03-16T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:24 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-03-16_2024-03-23.json.gz",
+      "raw_hash": "e0a922f00b0b791ed8895c9b887a0effd0c4b080575bae6281eadaae31c5563c",
+      "retrieved_at_utc": "2026-10-22T17:08:25.110785+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-03-16T00:00Z/2024-03-23T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:25 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-03-23_2024-03-30.json.gz",
+      "raw_hash": "dad833a7a69a9c01727ffb9e56bafff2b0ac7ecba2d519598fc0008445130037",
+      "retrieved_at_utc": "2026-10-22T17:08:26.016261+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-03-23T00:00Z/2024-03-30T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:26 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-03-30_2024-04-06.json.gz",
+      "raw_hash": "5157751eed84ee5496fd53996c1cc11c0f55988625585cd1a98882d83dec5812",
+      "retrieved_at_utc": "2026-10-22T17:08:26.925269+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-03-30T00:00Z/2024-04-06T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:27 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-04-06_2024-04-13.json.gz",
+      "raw_hash": "3a4602a37d484169303728b5e4a05258a2737d3d8b0ba9ea069c98d1944b08e9",
+      "retrieved_at_utc": "2026-10-22T17:08:27.839607+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-04-06T00:00Z/2024-04-13T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:28 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-04-13_2024-04-20.json.gz",
+      "raw_hash": "3b1a402e2988d30b14addeeed566169c1e0bf3eb90116f6c4e22a1f0678599f3",
+      "retrieved_at_utc": "2026-10-22T17:08:28.814763+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-04-13T00:00Z/2024-04-20T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:29 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-04-20_2024-04-27.json.gz",
+      "raw_hash": "e62d99dc629103402222021eb4b63c5b261476eae5bd9c60ec9dd1af0e54be2b",
+      "retrieved_at_utc": "2026-10-22T17:08:29.844909+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-04-20T00:00Z/2024-04-27T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:30 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-04-27_2024-05-04.json.gz",
+      "raw_hash": "055a1507f4385b9c352bc05579315d2ab64d1b2a738654b32df5b30760293159",
+      "retrieved_at_utc": "2026-10-22T17:08:30.783620+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-04-27T00:00Z/2024-05-04T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:31 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-05-04_2024-05-11.json.gz",
+      "raw_hash": "94d1699e718efdf6d4d43aa27a0b5ddd182266c5e26a813db104ab8cd81047cd",
+      "retrieved_at_utc": "2026-10-22T17:08:31.818708+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-05-04T00:00Z/2024-05-11T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:32 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-05-11_2024-05-18.json.gz",
+      "raw_hash": "fdfb78595d2e191f85d5da84ced10fdcb6737c101265a6e95652432f6213f511",
+      "retrieved_at_utc": "2026-10-22T17:08:33.488605+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-05-11T00:00Z/2024-05-18T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:33 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-05-18_2024-05-25.json.gz",
+      "raw_hash": "1aef571d9d8da559b137e50ffa3fe50e02530387aa1a8cdccc0b4db7a057ca71",
+      "retrieved_at_utc": "2026-10-22T17:08:34.654285+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-05-18T00:00Z/2024-05-25T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:35 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-05-25_2024-06-01.json.gz",
+      "raw_hash": "0eb51e3d22a97ac0996aa0dc6afabccc5d0a2c7cc79ee371c246ac3fe4ddbfce",
+      "retrieved_at_utc": "2026-10-22T17:08:35.598639+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-05-25T00:00Z/2024-06-01T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:35 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-06-01_2024-06-08.json.gz",
+      "raw_hash": "5fdc67cf867a515c6b6d6244343bc1048a7556f1ee9fcf9f78ae9a142cf4b872",
+      "retrieved_at_utc": "2026-10-22T17:08:36.206207+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-06-01T00:00Z/2024-06-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:36 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-06-08_2024-06-15.json.gz",
+      "raw_hash": "246748845a2f7f680840ab70e16963fd10e100349f7c197ae96ccb31e7b3234e",
+      "retrieved_at_utc": "2026-10-22T17:08:37.130595+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-06-08T00:00Z/2024-06-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:37 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-06-15_2024-06-22.json.gz",
+      "raw_hash": "f5b802ebcf57a2d49df2c55f79a2918dfd8f4760b74a651d81252b0c44c54e65",
+      "retrieved_at_utc": "2026-10-22T17:08:38.068690+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-06-15T00:00Z/2024-06-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:38 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-06-22_2024-06-29.json.gz",
+      "raw_hash": "3f47432fd227aea7bbdbd73fa0c65c170c15d1a0a7adc8de8060f485971e5915",
+      "retrieved_at_utc": "2026-10-22T17:08:38.953687+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-06-22T00:00Z/2024-06-29T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:39 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-06-29_2024-07-06.json.gz",
+      "raw_hash": "9027db39767521d04ba8793c9dcbc9dd2218f9a9ef2baee9f8fe07b35f170677",
+      "retrieved_at_utc": "2026-10-22T17:08:39.972075+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-06-29T00:00Z/2024-07-06T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:40 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-07-06_2024-07-13.json.gz",
+      "raw_hash": "d0f4ce7f3ae09d7c74a0490f1aa75533ad035e00574bb218d3c686903fb0d94f",
+      "retrieved_at_utc": "2026-10-22T17:08:40.956472+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-07-06T00:00Z/2024-07-13T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:41 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-07-13_2024-07-20.json.gz",
+      "raw_hash": "fb0c2e024133d81132c51034d212b8791a89adbde2660e9b2c4137aeb1160970",
+      "retrieved_at_utc": "2026-10-22T17:08:41.932286+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-07-13T00:00Z/2024-07-20T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:42 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-07-20_2024-07-27.json.gz",
+      "raw_hash": "5c988cf4e1ee8dc63c700244b2e02d68c9e2ec6f29869fa99fddb0a271380c82",
+      "retrieved_at_utc": "2026-10-22T17:08:42.889547+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-07-20T00:00Z/2024-07-27T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:43 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-07-27_2024-08-03.json.gz",
+      "raw_hash": "438868e1b7379a541c781b5bd3c3354d4df2e5c4c647e7c0b7bc888727ee6fab",
+      "retrieved_at_utc": "2026-10-22T17:08:43.894807+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-07-27T00:00Z/2024-08-03T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:44 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-08-03_2024-08-10.json.gz",
+      "raw_hash": "fd21d8862a8488e207bcbbcd649a12e2af9d5a02c75e648072fda540b56682ef",
+      "retrieved_at_utc": "2026-10-22T17:08:44.807189+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-08-03T00:00Z/2024-08-10T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:45 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-08-10_2024-08-17.json.gz",
+      "raw_hash": "e6e21264889a23ef65c93627c03e44303f70eaceb2c91fff80fc840de5f6effe",
+      "retrieved_at_utc": "2026-10-22T17:08:45.846500+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-08-10T00:00Z/2024-08-17T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:46 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-08-17_2024-08-24.json.gz",
+      "raw_hash": "8b712aacdb0a24546c95ec47447628a6a9aa29e841b947ebe125029406770c39",
+      "retrieved_at_utc": "2026-10-22T17:08:46.851733+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-08-17T00:00Z/2024-08-24T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:47 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-08-24_2024-08-31.json.gz",
+      "raw_hash": "126d687fa497e8816a9e1f8774a707fbd0c0b9b1c26560f8afb6fef833a06c98",
+      "retrieved_at_utc": "2026-10-22T17:08:47.498945+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-08-24T00:00Z/2024-08-31T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:47 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-08-31_2024-09-07.json.gz",
+      "raw_hash": "cc950e659257a132ad51ac4c8cbd9cce10df134e151f930b75f2da686af302a0",
+      "retrieved_at_utc": "2026-10-22T17:08:48.552341+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-08-31T00:00Z/2024-09-07T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:49 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-09-07_2024-09-14.json.gz",
+      "raw_hash": "facb2e4ce033b1f7154acf9ab23dddeb489b56a47c09388bf9cebb131197c961",
+      "retrieved_at_utc": "2026-10-22T17:08:49.705238+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-09-07T00:00Z/2024-09-14T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:49 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-09-14_2024-09-21.json.gz",
+      "raw_hash": "c593266005b3297db092f14ae423d259ac74fc13d271d2b63371e309dad0f9fb",
+      "retrieved_at_utc": "2026-10-22T17:08:50.419156+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-09-14T00:00Z/2024-09-21T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:50 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-09-21_2024-09-28.json.gz",
+      "raw_hash": "f30d0ce3c9473d8307fbe2f9a0aaa1dc5cccdc43606fb59944cf69179af63201",
+      "retrieved_at_utc": "2026-10-22T17:08:51.405819+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-09-21T00:00Z/2024-09-28T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:51 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-09-28_2024-10-05.json.gz",
+      "raw_hash": "d22e6e7e95b46cd69c070761426b434438adb3672a731f12c6aaf9c9920b2bd3",
+      "retrieved_at_utc": "2026-10-22T17:08:52.339636+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-09-28T00:00Z/2024-10-05T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:52 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-10-05_2024-10-12.json.gz",
+      "raw_hash": "173f7855a29639c73a98c2e77a37fced54da93837c9bbb5a145e712211a5d2b2",
+      "retrieved_at_utc": "2026-10-22T17:08:52.915769+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-10-05T00:00Z/2024-10-12T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:53 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-10-12_2024-10-19.json.gz",
+      "raw_hash": "eadb65145c085ffc0f38e446efb805a1b8ce8ce693ede6391d3e4e42ef2086a3",
+      "retrieved_at_utc": "2026-10-22T17:08:53.773357+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-10-12T00:00Z/2024-10-19T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:54 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-10-19_2024-10-26.json.gz",
+      "raw_hash": "8996ead9b0a5ae4d3a60762631c5b9c1c5504c737a4c63e49ba12c4b4d1c61da",
+      "retrieved_at_utc": "2026-10-22T17:08:54.668420+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-10-19T00:00Z/2024-10-26T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:54 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-10-26_2024-11-02.json.gz",
+      "raw_hash": "371fb991db58622245184f3f6941e4ed122bbcb415999d30b0658cf6b4ccabf1",
+      "retrieved_at_utc": "2026-10-22T17:08:55.558760+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-10-26T00:00Z/2024-11-02T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:55 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-11-02_2024-11-09.json.gz",
+      "raw_hash": "cf6feda2c4f6a73bd1c3cceee2a7940a7236913b4f04592b2d124686d5388c2e",
+      "retrieved_at_utc": "2026-10-22T17:08:56.454831+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-11-02T00:00Z/2024-11-09T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:56 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-11-09_2024-11-16.json.gz",
+      "raw_hash": "713165c411bd8187818a04841f131af834579658d4030004841e971e33b76975",
+      "retrieved_at_utc": "2026-10-22T17:08:57.393004+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-11-09T00:00Z/2024-11-16T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:57 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-11-16_2024-11-23.json.gz",
+      "raw_hash": "d44d04097911dd42360cbae272334bb816ae70c91c2b819d094eaec75a3d618b",
+      "retrieved_at_utc": "2026-10-22T17:08:58.306832+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-11-16T00:00Z/2024-11-23T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:58 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-11-23_2024-11-30.json.gz",
+      "raw_hash": "358503c931ac857b6e70ff58a9af11639bddcb5ee6ee35cab5c43bc695c7111e",
+      "retrieved_at_utc": "2026-10-22T17:08:58.899205+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-11-23T00:00Z/2024-11-30T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:08:59 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-11-30_2024-12-07.json.gz",
+      "raw_hash": "a02614234c518c7048fc4e905fe7de46de216e5356e1c4b163cc9151b68c89c8",
+      "retrieved_at_utc": "2026-10-22T17:08:59.831904+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-11-30T00:00Z/2024-12-07T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:00 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-12-07_2024-12-14.json.gz",
+      "raw_hash": "fce8c7db5bca1b27fdbb44a727c08b61ccc1c014343219e4571bdd2e92355d76",
+      "retrieved_at_utc": "2026-10-22T17:09:00.748074+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-12-07T00:00Z/2024-12-14T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:01 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-12-14_2024-12-21.json.gz",
+      "raw_hash": "384e57befced1d161f997fb54359c134dcbfc0300ee3c66be76107d303c46711",
+      "retrieved_at_utc": "2026-10-22T17:09:01.649063+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-12-14T00:00Z/2024-12-21T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:01 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-12-21_2024-12-28.json.gz",
+      "raw_hash": "cb587a3a5b1e92dad0abea2663a4496fa0a4bba04ffaf9304fc6e640a5167f4c",
+      "retrieved_at_utc": "2026-10-22T17:09:02.567061+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-12-21T00:00Z/2024-12-28T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:02 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2024-12-28_2025-01-04.json.gz",
+      "raw_hash": "6dc8da298b767a00610b3f29c68a3004db2043f8bb872eb95446ba7341b076dc",
+      "retrieved_at_utc": "2026-10-22T17:09:03.472744+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2024-12-28T00:00Z/2025-01-04T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:03 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-01-04_2025-01-11.json.gz",
+      "raw_hash": "881e0d7a21b38b9f414d35297b400486dfb167ac2882aa1465df0aae0de67fea",
+      "retrieved_at_utc": "2026-10-22T17:09:04.372706+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-01-04T00:00Z/2025-01-11T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:04 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-01-11_2025-01-18.json.gz",
+      "raw_hash": "cd0c7fbe45fdea9cd160db0372e2f15767920eac6c4f221eb7828e803b183416",
+      "retrieved_at_utc": "2026-10-22T17:09:05.271435+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-01-11T00:00Z/2025-01-18T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:05 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-01-18_2025-01-25.json.gz",
+      "raw_hash": "8f0aef2f435461cd5d3a77eecfe96834a7e531e89ed264888754c62881bab66c",
+      "retrieved_at_utc": "2026-10-22T17:09:06.230907+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-01-18T00:00Z/2025-01-25T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:06 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-01-25_2025-02-01.json.gz",
+      "raw_hash": "ed38e0b20876998cababd640417a4d309c159de5d5f69b7f026539b2673bc5d7",
+      "retrieved_at_utc": "2026-10-22T17:09:07.140941+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-01-25T00:00Z/2025-02-01T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:07 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-02-01_2025-02-08.json.gz",
+      "raw_hash": "53be642c32ab72e45d15f1a04a574b440c7385a296436c01cce1d9a0957cd3d6",
+      "retrieved_at_utc": "2026-10-22T17:09:08.060195+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-02-01T00:00Z/2025-02-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:08 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-02-08_2025-02-15.json.gz",
+      "raw_hash": "83a5158b7a09b732f8dc4db849d3e809dfa7e8dcc8cb83394245fab0ba4baae4",
+      "retrieved_at_utc": "2026-10-22T17:09:08.954144+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-02-08T00:00Z/2025-02-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:09 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-02-15_2025-02-22.json.gz",
+      "raw_hash": "7121055a7229c69a1717c0cd78136ced2f82b074a6d23b9a4596932baf5edf89",
+      "retrieved_at_utc": "2026-10-22T17:09:09.855618+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-02-15T00:00Z/2025-02-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:10 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-02-22_2025-03-01.json.gz",
+      "raw_hash": "67031bfd2d9666f59afb7076b7979f175eec2cf0c43f1c403e9011a8bbeb1472",
+      "retrieved_at_utc": "2026-10-22T17:09:10.593231+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-02-22T00:00Z/2025-03-01T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:10 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-03-01_2025-03-08.json.gz",
+      "raw_hash": "be9e882168ec453fe710fc4d10f8ebaada4642ada8c089e8431113e02eb3b2af",
+      "retrieved_at_utc": "2026-10-22T17:09:11.541866+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-03-01T00:00Z/2025-03-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:11 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-03-08_2025-03-15.json.gz",
+      "raw_hash": "0b3fab38fd12257be8a05e543ab2be7ea0812801139539cfc4871c9f79f57cec",
+      "retrieved_at_utc": "2026-10-22T17:09:12.482052+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-03-08T00:00Z/2025-03-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:12 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-03-15_2025-03-22.json.gz",
+      "raw_hash": "b1c530f384eb3a4203bc08c033a00b838c4b74f3e0993645ad1f18078f7394c8",
+      "retrieved_at_utc": "2026-10-22T17:09:13.367281+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-03-15T00:00Z/2025-03-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:13 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-03-22_2025-03-29.json.gz",
+      "raw_hash": "7125e4d476d4d6ee88a7c646c15edf4a25e28d09505d57bdfb635f313d0533c4",
+      "retrieved_at_utc": "2026-10-22T17:09:14.250309+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-03-22T00:00Z/2025-03-29T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:14 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-03-29_2025-04-05.json.gz",
+      "raw_hash": "473afa617b61f821fe2cb391125da88e1eb595f5e9730f23d0b52143543f38fd",
+      "retrieved_at_utc": "2026-10-22T17:09:15.167476+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-03-29T00:00Z/2025-04-05T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:15 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-04-05_2025-04-12.json.gz",
+      "raw_hash": "435e7f2d40cac77232d312cbdface55bd1bf7b2f55f967ec64da7da0bd5e39f3",
+      "retrieved_at_utc": "2026-10-22T17:09:15.757610+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-04-05T00:00Z/2025-04-12T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:16 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-04-12_2025-04-19.json.gz",
+      "raw_hash": "12f4792dcbb8a3f6f4ef899056e754dbe8ac689df4cb8c431eb40a8de9929519",
+      "retrieved_at_utc": "2026-10-22T17:09:16.768317+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-04-12T00:00Z/2025-04-19T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:17 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-04-19_2025-04-26.json.gz",
+      "raw_hash": "a12f9a50788810cc510dbc25859bb42c088587f82163d981d14bae988bb09a3e",
+      "retrieved_at_utc": "2026-10-22T17:09:17.788498+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-04-19T00:00Z/2025-04-26T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:18 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-04-26_2025-05-03.json.gz",
+      "raw_hash": "329566a87cc70463601c64ede2b400fcb88a2f4ea51c648f54a5b517226de472",
+      "retrieved_at_utc": "2026-10-22T17:09:18.746607+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-04-26T00:00Z/2025-05-03T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:19 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-05-03_2025-05-10.json.gz",
+      "raw_hash": "4c7f8240cb6849d525930dd4b5e4cfc8bc20198c09c8a433d5b4db7e42880aed",
+      "retrieved_at_utc": "2026-10-22T17:09:19.667613+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-05-03T00:00Z/2025-05-10T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:20 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-05-10_2025-05-17.json.gz",
+      "raw_hash": "d3b84eac897ebd9632aa491eb9038f161166515421cf6eaee4feb00ac2a6c41f",
+      "retrieved_at_utc": "2026-10-22T17:09:20.706349+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-05-10T00:00Z/2025-05-17T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:21 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-05-17_2025-05-24.json.gz",
+      "raw_hash": "d906de34c8980cb8f46b6272b2326ccd61e7972122255e46c12e5feca07ac3b8",
+      "retrieved_at_utc": "2026-10-22T17:09:21.648775+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-05-17T00:00Z/2025-05-24T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:21 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-05-24_2025-05-31.json.gz",
+      "raw_hash": "27212ec43bd587746a95f49c4a12e0843cb78490dc48e554f3d738728f509e0f",
+      "retrieved_at_utc": "2026-10-22T17:09:22.566381+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-05-24T00:00Z/2025-05-31T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:22 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-05-31_2025-06-07.json.gz",
+      "raw_hash": "419ec4b24aafce994c6b2d10cd96ca71ede8407726b035fa58c4acbfe3000314",
+      "retrieved_at_utc": "2026-10-22T17:09:23.501207+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-05-31T00:00Z/2025-06-07T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:23 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-06-07_2025-06-14.json.gz",
+      "raw_hash": "e2d2c14cf433b6923aadbee1c73a166381b48022591c67d0b5d098861faca561",
+      "retrieved_at_utc": "2026-10-22T17:09:24.090688+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-06-07T00:00Z/2025-06-14T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:27 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-06-14_2025-06-21.json.gz",
+      "raw_hash": "16f3ec0cc4d2804a6028ef4d7fadc5a2e26ea26de446be3be2889616490bf1f1",
+      "retrieved_at_utc": "2026-10-22T17:09:27.609991+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-06-14T00:00Z/2025-06-21T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:27 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-06-21_2025-06-28.json.gz",
+      "raw_hash": "de7df405c4432f4ecc9a24b158a96999346c1a7783bbfc2c7c3f58cd3864993b",
+      "retrieved_at_utc": "2026-10-22T17:09:28.527954+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-06-21T00:00Z/2025-06-28T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:28 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-06-28_2025-07-05.json.gz",
+      "raw_hash": "7082e1e362353dd0b42e7b3476473767fb2e02c929e2165468ae4e80f69f463a",
+      "retrieved_at_utc": "2026-10-22T17:09:29.555806+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-06-28T00:00Z/2025-07-05T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:29 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-07-05_2025-07-12.json.gz",
+      "raw_hash": "b6f89619604b8cb00d174d5aa3dfd8fd642932a6a0115033633baae23e94c962",
+      "retrieved_at_utc": "2026-10-22T17:09:30.446285+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-07-05T00:00Z/2025-07-12T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:30 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-07-12_2025-07-19.json.gz",
+      "raw_hash": "4bbd07b972944b741631f0a84a66f63d12503504fb7b998564cbc46eb700bb7b",
+      "retrieved_at_utc": "2026-10-22T17:09:31.365661+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-07-12T00:00Z/2025-07-19T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:31 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-07-19_2025-07-26.json.gz",
+      "raw_hash": "bab4f496775ea4fe51020230983d8c4232ae6e2955895949749f977686de924b",
+      "retrieved_at_utc": "2026-10-22T17:09:32.328601+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-07-19T00:00Z/2025-07-26T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:32 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-07-26_2025-08-02.json.gz",
+      "raw_hash": "27c875aad12113f0f2c519d54278451ca1d04455c44bc2595943a90d400c87a5",
+      "retrieved_at_utc": "2026-10-22T17:09:33.225638+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-07-26T00:00Z/2025-08-02T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:33 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-08-02_2025-08-09.json.gz",
+      "raw_hash": "2b9e518af465fbf231c2e38d9a966a66984c7c6fa1fe05620c1225a0326d3180",
+      "retrieved_at_utc": "2026-10-22T17:09:34.124697+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-08-02T00:00Z/2025-08-09T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:34 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-08-09_2025-08-16.json.gz",
+      "raw_hash": "e89064529885442ede93e6fe49652a827e4a927357ea1015a4291928d01069de",
+      "retrieved_at_utc": "2026-10-22T17:09:35.021454+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-08-09T00:00Z/2025-08-16T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:35 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-08-16_2025-08-23.json.gz",
+      "raw_hash": "14cd9c2bb0546922b15f8ccaeb3c73c4adc865d89a8560ebb7859cd9efc04298",
+      "retrieved_at_utc": "2026-10-22T17:09:35.963147+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-08-16T00:00Z/2025-08-23T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:36 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-08-23_2025-08-30.json.gz",
+      "raw_hash": "f7a6d8f439e2353737cdec0bb18e42c855a25436926d84c71a512a12f4d76d88",
+      "retrieved_at_utc": "2026-10-22T17:09:36.901907+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-08-23T00:00Z/2025-08-30T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:37 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-08-30_2025-09-06.json.gz",
+      "raw_hash": "16d920a44c163aa0646834264f84d8dbaf362dcf663edea603d2ff2eb79d75d6",
+      "retrieved_at_utc": "2026-10-22T17:09:37.864758+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-08-30T00:00Z/2025-09-06T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:38 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-09-06_2025-09-13.json.gz",
+      "raw_hash": "e44085abc4ef1134adf92472296e1b95c45107c9d8e41acc423fd7daa2a89270",
+      "retrieved_at_utc": "2026-10-22T17:09:38.765921+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-09-06T00:00Z/2025-09-13T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:39 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-09-13_2025-09-20.json.gz",
+      "raw_hash": "e6233292e320e6ef073890cbe3153cf5795b87b1637141e25247145f1ccbc1ac",
+      "retrieved_at_utc": "2026-10-22T17:09:39.666439+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-09-13T00:00Z/2025-09-20T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:39 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-09-20_2025-09-27.json.gz",
+      "raw_hash": "a05b4808778fdc0840a88b356e73695c0bfb1e623c47d19684dfff2ec08f5b5d",
+      "retrieved_at_utc": "2026-10-22T17:09:40.251449+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-09-20T00:00Z/2025-09-27T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:40 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-09-27_2025-10-04.json.gz",
+      "raw_hash": "be9dfb916bf76e711bbb25a5def7463569221164025a10129e5ac8b6858f8794",
+      "retrieved_at_utc": "2026-10-22T17:09:41.146439+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-09-27T00:00Z/2025-10-04T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:41 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-10-04_2025-10-11.json.gz",
+      "raw_hash": "36b9321db8d0746eacc56fa48585561ddce84ba27948d12ae87b190ab8bc206d",
+      "retrieved_at_utc": "2026-10-22T17:09:42.046675+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-10-04T00:00Z/2025-10-11T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:42 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-10-11_2025-10-18.json.gz",
+      "raw_hash": "6af6153bb75823cc4cb07ad9db5f5a74ecb6db00ce2193c0ec2e816e444698be",
+      "retrieved_at_utc": "2026-10-22T17:09:42.692435+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-10-11T00:00Z/2025-10-18T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:43 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-10-18_2025-10-25.json.gz",
+      "raw_hash": "a74672cfba9f0c5554b95849d060d70eaa2f1b57953ec072036f738c503e0cf8",
+      "retrieved_at_utc": "2026-10-22T17:09:43.603232+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-10-18T00:00Z/2025-10-25T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:43 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-10-25_2025-11-01.json.gz",
+      "raw_hash": "b23d973044d2426e433999808caa2c0af4df29b0e7da46d82fe0f8d00b839931",
+      "retrieved_at_utc": "2026-10-22T17:09:44.504734+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-10-25T00:00Z/2025-11-01T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:44 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-11-01_2025-11-08.json.gz",
+      "raw_hash": "5478031fdebc37c10d3e0d0ea2ee9af62ed0d80cfda2aadf44e6dd822ee61c80",
+      "retrieved_at_utc": "2026-10-22T17:09:45.432418+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-11-01T00:00Z/2025-11-08T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:45 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-11-08_2025-11-15.json.gz",
+      "raw_hash": "8528527ca11b3ef969384b50a62ba002aec09d356f3c7df2c6022099c5a59dfb",
+      "retrieved_at_utc": "2026-10-22T17:09:46.330928+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-11-08T00:00Z/2025-11-15T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:46 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-11-15_2025-11-22.json.gz",
+      "raw_hash": "21b4c8af498a7c0e0ce5c28d83ec093a8ef240e6cacfb5c8659a18ccbfa462ff",
+      "retrieved_at_utc": "2026-10-22T17:09:47.300686+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-11-15T00:00Z/2025-11-22T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:47 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-11-22_2025-11-29.json.gz",
+      "raw_hash": "c9edd3cf807f1dcfa3f4aa4f01060deba68c1e3f7d6d9d7047b8a5324ea7c0f5",
+      "retrieved_at_utc": "2026-10-22T17:09:48.205630+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-11-22T00:00Z/2025-11-29T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:48 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-11-29_2025-12-06.json.gz",
+      "raw_hash": "f53a248aa4bc858032554008921ca899e0518da8aba81925a2e332620a2dfb28",
+      "retrieved_at_utc": "2026-10-22T17:09:49.268279+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-11-29T00:00Z/2025-12-06T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:49 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-12-06_2025-12-13.json.gz",
+      "raw_hash": "1e463cf4bbfc7a133c2dc66d1356959c55096c213363deff7643e5af7b9d815e",
+      "retrieved_at_utc": "2026-10-22T17:09:50.267537+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-12-06T00:00Z/2025-12-13T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:50 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-12-13_2025-12-20.json.gz",
+      "raw_hash": "b9a6fdca5130916253bbadee527a6baca4634dff80832492a6c36318c6c46d05",
+      "retrieved_at_utc": "2026-10-22T17:09:51.207441+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-12-13T00:00Z/2025-12-20T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:51 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 336,
+      "path": "data/raw/2025-12-20_2025-12-27.json.gz",
+      "raw_hash": "e5214650d09c6241986e66a8d19d337944c9d9d835dadfb1224e990637ecf9a4",
+      "retrieved_at_utc": "2026-10-22T17:09:51.856955+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-12-20T00:00Z/2025-12-27T00:00Z"
+    },
+    {
+      "headers": {
+        "Content-Type": "application/json",
+        "Date": "Thu, 22 Oct 2026 17:09:52 GMT",
+        "ETag": null,
+        "Last-Modified": null
+      },
+      "normalized_slots": 240,
+      "path": "data/raw/2025-12-27_2026-01-01.json.gz",
+      "raw_hash": "501cd61b247549fdfb3d1e6d1d4f698fb8f38b5fde91a476a439522a7ec6cba5",
+      "retrieved_at_utc": "2026-10-22T17:09:52.869716+00:00",
+      "status": 200,
+      "url": "https://api.carbonintensity.org.uk/intensity/2025-12-27T00:00Z/2026-01-01T00:00Z"
+    }
+  ],
+  "end_utc": "2026-01-01 00:00:00+00:00",
+  "expected_slots": 70128,
+  "forecast_vintage_verified": false,
+  "frozen_at_utc": "2026-10-22T17:09:53.622572+00:00",
+  "licence": "CC BY 4.0 and official API terms",
+  "normalized_hash": "f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e",
+  "normalized_slots": 70128,
+  "observed_slots": 69950,
+  "schema_version": 1,
+  "source": "https://api.carbonintensity.org.uk",
+  "start_utc": "2022-01-01 00:00:00+00:00",
+  "target": "NESO estimated actual",
+  "units": "gCO2/kWh"
+}

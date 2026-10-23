@@ -1,0 +1,17 @@
+{
+  "chosen_start": "2024-12-01 00:00:00+00:00",
+  "duration_hours": 2,
+  "energy_kwh": 0.96,
+  "lower80": 66.50678765936539,
+  "lower95": 57.50008673265771,
+  "mean_grams": 86.15302045223257,
+  "median_grams": 86.56683696869523,
+  "method": "Joint conditional state-space paths with fixed fitted parameters",
+  "model_id": "ARIMA(3,1,3)",
+  "origin": "2024-12-01 00:00:00+00:00",
+  "scope": "Representative validation conditional joint-path example; not calibrated job-cost coverage",
+  "simulations": 1000,
+  "std_grams": 15.256971316682643,
+  "upper80": 105.72641781268663,
+  "upper95": 115.64755508261145
+}

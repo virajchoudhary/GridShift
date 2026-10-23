@@ -1,0 +1,22 @@
+{
+  "baseline_cutoffs": "All arrays reconstructed from frozen source and causal eligible-prefix algorithm",
+  "classical_cutoffs": "Complete checked refit partitions; exact eligible cutoff and explicit delay",
+  "data_hash": "f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e",
+  "forecast_hashes": {
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/calendar_mean.npz": "8135573a4cc54495d92fc6ec641a5285235cdcce3d59c04a28cd09af3727f65c",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/daily_naive.npz": "38fe0f57f3a12c311a9fcf1e373e5da673eb6dfb8112d4e85c173097d1dd423f",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_00.npz": "aed37072c21be65de7764e867825835630998bbfaca5570c327140e3e6e4020f",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_01.npz": "23c5e92d7f139349133513aa50dd758e0f75ee5da7cefebb806737136255af09",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_02.npz": "8eb6fe60737107e45ddfd92b8ca68c3419d896120a818b925044cbf5cfc0a0ea",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_03.npz": "4d4bfe24331ff46c0141ac6e41a23cc1554a59e5c2db72bebc8adb603fd3b3e1",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_04.npz": "380c20c1e8f05b5dc079f827d0b835680a6593edb16e6b5d41fa410036a1fb78",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/persistence.npz": "a9c6b0b3b3df474d9b81fddcb11765700a7a6c8474819e06ac64385e4ba9bea0",
+    "artifacts/runs/d2dee2d358735d7d/test/forecasts/weekly_naive.npz": "73ef4f17c8d9226b2bf3ae273c715f0d57f5089b23bda4a7dde2f9c2a5839420"
+  },
+  "models": 9,
+  "origins": 17473,
+  "passed": true,
+  "protocol_hash": "b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c",
+  "software_hash": "16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0",
+  "stage": "test"
+}

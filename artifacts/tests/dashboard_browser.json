@@ -1,0 +1,30 @@
+{
+  "passed": true,
+  "views": 5,
+  "desktop": [
+    1440,
+    960
+  ],
+  "mobile": [
+    390,
+    844
+  ],
+  "exceptions": [],
+  "checked_at_utc": "2026-10-22T23:48:51.137Z",
+  "completed_results": true,
+  "scope": "Local browser paths and layout; screenshots require visual review",
+  "file_hashes": {
+    "app/streamlit_app.py": "31d06054994e46b3c05428c363acfbff99358c005d5c9ec9e8c00bb012c4bc76",
+    "scripts/verify_dashboard.cjs": "84677642aa90f8a3869f2c220935ea493b95b3a304cc8857de6a26fa54e7278f",
+    "artifacts/tests/dashboard-backtests.png": "664b0f00bfeb0aa108bcb7c7d7c7f4a5d20e575c96e529f107617ead9d05ac37",
+    "artifacts/tests/dashboard-data-and-evidence.png": "9145be4cdf7d6b1d95282d6fa5b72ce2533bfe307647d0d8c190d51e12cbc9ac",
+    "artifacts/tests/dashboard-desktop-pretest.png": "c5f1e011eba63f7ead468878905611ec1edf29b22faac960511dffcbf3804335",
+    "artifacts/tests/dashboard-desktop.png": "ae5f3a31aebc74f69be315dbe4d6469ac6537a8e6e16fb708fdd783bacdcd0cc",
+    "artifacts/tests/dashboard-forecasts.png": "861196c77b2c0d44968f98bc9443b1a1d429b734de76f0f18e9dc17309e26fea",
+    "artifacts/tests/dashboard-mobile-pretest.png": "dc79a21ceeed41c511bf0b8ed39844fa9258f18947a551a62de2b884279d4895",
+    "artifacts/tests/dashboard-mobile.png": "3221910e5886633e1a847b711d51ece31aaea2a6103d47eaa440849f896326b3",
+    "artifacts/tests/dashboard-model-comparison.png": "89d59ff3c464680452734ed8d304e02bdac164442504210e83a4f5413fceae7a",
+    "artifacts/results.json": "8cd196dbbe13512f1e09f2c07e285ce4f476bae673184ab8cd56b92fae58d743",
+    "artifacts/deployment/deployment.json": "d5bf321c9abce7d78ba030ffc07879b3c85f6281c392bdc760f32de28cf2a38d"
+  }
+}

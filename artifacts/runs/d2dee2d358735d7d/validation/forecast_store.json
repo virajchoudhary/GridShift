@@ -1,0 +1,16 @@
+{
+  "AR(7,0,0)": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_00.npz",
+  "AR(8,0,0)[log1p]": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_05.npz",
+  "ARIMA(2,1,1)[log1p]": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_08.npz",
+  "ARIMA(3,1,3)": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_03.npz",
+  "ARMA(3,0,1)[log1p]": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_07.npz",
+  "ARMA(3,0,2)": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_02.npz",
+  "MA(0,0,8)": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_01.npz",
+  "MA(0,0,8)[log1p]": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_06.npz",
+  "SARIMA(1,0,1)x(1,0,0,48)": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_04.npz",
+  "SARIMA(1,0,1)x(1,0,0,48)[log1p]": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/model_09.npz",
+  "calendar_mean": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/calendar_mean.npz",
+  "daily_naive": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/daily_naive.npz",
+  "persistence": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/persistence.npz",
+  "weekly_naive": "artifacts/runs/d2dee2d358735d7d/validation/forecasts/weekly_naive.npz"
+}

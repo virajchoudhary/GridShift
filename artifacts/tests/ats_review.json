@@ -1,0 +1,24 @@
+{
+  "r03_current": "PASS with91absent56null development slots",
+  "r03_original": "PARTIAL corrected by r03_correction_recheck",
+  "requirements": {
+    "R01": "PASS",
+    "R02": "PASS",
+    "R03": "PASS",
+    "R04": "PASS",
+    "R05": "PASS",
+    "R06": "PASS",
+    "R07": "PASS",
+    "R08": "PASS",
+    "R09": "PASS",
+    "R10": "PASS",
+    "R11": "PASS",
+    "R12": "PASS",
+    "R13": "PASS",
+    "R14": "PASS"
+  },
+  "reviewer": "diagnostic_independent_review",
+  "runtime_effort": "max",
+  "runtime_model": "azure-kmamc/gpt-6-luna",
+  "scope": "Independent actual pretest data and ATS artifacts; no test performance claim"
+}

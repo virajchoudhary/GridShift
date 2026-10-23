@@ -1,0 +1,10 @@
+{
+  "missing_reason_counts": {
+    "absent_interval": 122,
+    "explicit_null_actual": 56
+  },
+  "raw_chunks": 209,
+  "raw_hashes_match": true,
+  "reconstructed_slots": 70128,
+  "values_match": true
+}

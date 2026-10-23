@@ -1,0 +1,11 @@
+{
+  "AR(7,0,0)": "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_00.npz",
+  "ARIMA(3,1,3)": "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_03.npz",
+  "ARMA(3,0,2)": "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_02.npz",
+  "MA(0,0,8)[log1p]": "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_01.npz",
+  "SARIMA(1,0,1)x(1,0,0,48)": "artifacts/runs/d2dee2d358735d7d/test/forecasts/model_04.npz",
+  "calendar_mean": "artifacts/runs/d2dee2d358735d7d/test/forecasts/calendar_mean.npz",
+  "daily_naive": "artifacts/runs/d2dee2d358735d7d/test/forecasts/daily_naive.npz",
+  "persistence": "artifacts/runs/d2dee2d358735d7d/test/forecasts/persistence.npz",
+  "weekly_naive": "artifacts/runs/d2dee2d358735d7d/test/forecasts/weekly_naive.npz"
+}

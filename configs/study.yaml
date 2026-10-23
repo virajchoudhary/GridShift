@@ -1,0 +1,49 @@
+schema_version: 1
+data:
+  start: "2022-01-01T00:00:00Z"
+  end: "2026-01-01T00:00:00Z"
+  chunk_days: 7
+  source: "https://api.carbonintensity.org.uk"
+  licence: "CC BY 4.0; official API terms"
+study:
+  validation_start: "2024-01-01T00:00:00Z"
+  validation_end: "2025-01-01T00:00:00Z"
+  test_start: "2025-01-01T00:00:00Z"
+  test_end: "2026-01-01T00:00:00Z"
+  horizon_slots: 48
+  reported_horizons: [1, 4, 12, 24, 48]
+  window_days: 180
+  publication_delay_slots: 1
+  refit_days: 7
+  bootstrap_resamples: 2000
+  bootstrap_block_days: [3, 7, 14]
+  seed: 1729
+scheduling:
+  duration_hours: [0.5, 1, 2, 4]
+  slack_hours: [0, 2, 6, 12, 20]
+  default_duration_hours: 2
+  default_slack_hours: 10
+  release_every_hours: 3
+  power_kw: 0.4
+  pue: 1.2
+queue:
+  durations_hours: [1, 2, 4]
+  probabilities: [0.5, 0.3, 0.2]
+  offered_loads: [0.3, 0.6, 0.85]
+  seeds: [1729, 2718, 31415]
+  slack_hours: [6, 12]
+  warmup_hours: 48
+  drain_hours: 24
+forecast:
+  transforms: ["identity", "log1p"]
+  d_values: [0, 1]
+  D_values: [0]
+  catalogue_mode: "reduced"
+  catalogue_reason: "Training-only 180-day period-48 pilot required about 35-52 seconds per seasonal fit. Retain four explicit seasonal structures per transformation, all nonseasonal orders, and all 12 anchors."
+  top_k_per_group: 1
+  min_converged_anchors: 10
+  fit_workers: 2
+  maxiter: 80
+  initialization: "stationary"
+  loglikelihood_burn: 96
+  missing_policy: "short_gap"

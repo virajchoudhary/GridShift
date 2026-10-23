@@ -1,0 +1,5 @@
+origin,status,recommendation_enabled,last_observation,age_hours,injected_outage_hours,fallback_start,fallback_finish,deadline,carbon_estimate,scope
+2024-01-01 00:00:00+00:00,stale,False,2023-12-31 18:00:00+00:00,5.5,6,2024-01-01 00:00:00+00:00,2024-01-01 02:00:00+00:00,2024-01-01 12:00:00+00:00,,Operational state replay using only eligible validation history
+2024-04-01 00:00:00+00:00,stale,False,2024-03-31 18:00:00+00:00,5.5,6,2024-04-01 00:00:00+00:00,2024-04-01 02:00:00+00:00,2024-04-01 12:00:00+00:00,,Operational state replay using only eligible validation history
+2024-07-01 00:00:00+00:00,stale,False,2024-06-30 18:00:00+00:00,5.5,6,2024-07-01 00:00:00+00:00,2024-07-01 02:00:00+00:00,2024-07-01 12:00:00+00:00,,Operational state replay using only eligible validation history
+2024-10-01 00:00:00+00:00,stale,False,2024-09-30 18:00:00+00:00,5.5,6,2024-10-01 00:00:00+00:00,2024-10-01 02:00:00+00:00,2024-10-01 12:00:00+00:00,,Operational state replay using only eligible validation history

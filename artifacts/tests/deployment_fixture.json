@@ -1,0 +1,8 @@
+{
+  "max_mean_absolute_difference": 0.0,
+  "model_id": "calendar_mean",
+  "observation_state": "fresh",
+  "origin": "2026-01-01 00:00:00+00:00",
+  "realized_result": "not scored",
+  "verified": true
+}

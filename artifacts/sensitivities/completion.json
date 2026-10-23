@@ -1,0 +1,42 @@
+{
+  "completed": true,
+  "episode_days": 3,
+  "forecast_origins_per_episode": 97,
+  "model": "SARIMA(1,0,1)x(1,0,0,48)",
+  "months": [
+    1,
+    4,
+    7,
+    10
+  ],
+  "nonconstant_profile": {
+    "duration_hours": 2,
+    "multipliers": [
+      0.5,
+      1.5,
+      0.5,
+      1.5
+    ]
+  },
+  "power_pue_sensitivity": "Absolute costs scale with power times PUE for constant fixed energy; percentage and ranking invariance tested.",
+  "scope": "Descriptive validation episodes. No full-year robustness or test selection claim.",
+  "variants": {
+    "default": {},
+    "delay_0min": {
+      "publication_delay_slots": 0
+    },
+    "delay_60min": {
+      "publication_delay_slots": 2
+    },
+    "native_missing": {
+      "missing_policy": "native"
+    },
+    "window_365days": {
+      "training_window_days": 365
+    },
+    "window_90days": {
+      "training_window_days": 90
+    }
+  },
+  "year": 2024
+}

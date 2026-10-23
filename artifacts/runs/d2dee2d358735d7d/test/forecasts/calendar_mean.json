@@ -1,0 +1,7 @@
+{
+  "fallback_count": 0,
+  "forecast_sha256": "8135573a4cc54495d92fc6ec641a5285235cdcce3d59c04a28cd09af3727f65c",
+  "interval_note": "Diagnostic Gaussian bounds using eligible daily-difference RMS; not calibrated guarantees",
+  "model_id": "calendar_mean",
+  "origin_count": 17473
+}

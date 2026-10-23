@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="1" skipped="0" tests="23" time="9.589" timestamp="2026-10-22T23:10:00.541443+05:30" hostname="LenLaptop"><testcase classname="tests.test_data" name="test_preceding_slot_and_overlapping_chunks" time="0.074" /><testcase classname="tests.test_data" name="test_dst_civil_days_do_not_create_missing_utc_intervals[2024-03-31T00:00Z-46]" time="0.039" /><testcase classname="tests.test_data" name="test_dst_civil_days_do_not_create_missing_utc_intervals[2024-10-26T23:00Z-50]" time="0.031" /><testcase classname="tests.test_data" name="test_null_actual_does_not_use_provider_forecast" time="0.004" /><testcase classname="tests.test_data" name="test_conflicting_duplicates_rejected" time="0.003" /><testcase classname="tests.test_data" name="test_availability_delay_and_future_mutation" time="0.004" /><testcase classname="tests.test_data" name="test_naive_time_invalid_job_and_forecast_rejected" time="0.001" /><testcase classname="tests.test_data" name="test_test_set_requires_freeze" time="0.015" /><testcase classname="tests.test_data" name="test_monthly_gate_applies_to_locked_test_not_development" time="1.288" /><testcase classname="tests.test_single_job" name="test_integrated_cost_matches_energy_times_intensity" time="0.005" /><testcase classname="tests.test_single_job" name="test_power_scaling_is_linear_and_pue_is_applied_once" time="0.003" /><testcase classname="tests.test_single_job" name="test_partial_last_slot_uses_only_the_overlap_energy" time="0.002" /><testcase classname="tests.test_single_job" name="test_schedule_integrates_the_full_window_not_the_single_lowest_slot" time="0.007" /><testcase classname="tests.test_single_job" name="test_reservations_use_half_open_overlap_and_preserve_deadline" time="0.007" /><testcase classname="tests.test_single_job" name="test_no_slack_requires_release_start_even_when_later_forecast_is_lower" time="0.004" /><testcase classname="tests.test_single_job" name="test_flat_carbon_exact_tie_favors_earliest_start" time="0.004" /><testcase classname="tests.test_single_job" name="test_missing_or_short_forecast_is_explicitly_unavailable" time="0.005" /><testcase classname="tests.test_single_job" name="test_invalid_truth_coverage_in_integrator_is_not_silently_zero_filled" time="0.003" /><testcase classname="tests.test_single_job" name="test_future_truth_mutation_cannot_change_forecast_decision" time="0.007" /><testcase classname="tests.test_single_job" name="test_oracle_matches_exhaustive_candidate_enumeration" time="0.390" /><testcase classname="tests.test_single_job" name="test_backtest_persists_paired_identical_job_sets" time="2.731" /><testcase classname="tests.test_single_job" name="test_backtest_validation_model_choice_ignores_test_truth_changes" time="0.911"><failure message="AssertionError: assert None == 'low'">tmp_path = WindowsPath('C:/Users/viraj/AppData/Local/Temp/pytest-of-viraj/pytest-39/test_backtest_validation_model0')
+
+    def test_backtest_validation_model_choice_ignores_test_truth_changes(tmp_path):
+        validation_start = ORIGIN
+        test_start = ORIGIN + pd.Timedelta(days=4)
+        end = test_start + pd.Timedelta(days=3)
+        truth_index = pd.date_range(
+            validation_start - pd.Timedelta(days=2), end, freq=SLOT, inclusive="left"
+        )
+        truth_values = np.resize(np.asarray([400, 300, 10, 10, 10, 10], dtype=float), len(truth_index))
+        truth = pd.Series(truth_values, index=truth_index)
+        origins = pd.date_range(
+            validation_start - pd.Timedelta(days=2), end, freq="3h", inclusive="left"
+        )
+        low = np.tile(np.asarray([500, 500, 0] + [0] * 45, dtype=np.float32), (len(origins), 1))
+        high = np.tile(np.asarray([0, 500, 500] + [500] * 45, dtype=np.float32), (len(origins), 1))
+        np.savez(tmp_path / "low.npz", origins_ns=origins.asi8, mean=low)
+        np.savez(tmp_path / "high.npz", origins_ns=origins.asi8, mean=high)
+        config = {
+            "study": {
+                "validation_start": validation_start.isoformat(),
+                "validation_end": test_start.isoformat(),
+                "seed": 1729,
+                "bootstrap_resamples": 10,
+            },
+            "scheduling": {
+                "duration_hours": [1],
+                "slack_hours": [1],
+                "default_duration_hours": 1,
+                "default_slack_hours": 1,
+            },
+        }
+        files = {"low": tmp_path / "low.npz", "high": tmp_path / "high.npz"}
+        first = primary_backtest(truth, files, test_start, end, tmp_path / "one", config)
+        changed = truth.copy()
+        changed.loc[changed.index &gt;= test_start] = 900
+        second = primary_backtest(changed, files, test_start, end, tmp_path / "two", config)
+&gt;       assert first["selected_model"] == "low"
+E       AssertionError: assert None == 'low'
+
+tests\test_single_job.py:282: AssertionError</failure></testcase><testcase classname="tests.test_single_job" name="test_metrics_and_time_block_bootstrap_respect_paired_daily_rows" time="0.014" /></testsuite></testsuites>

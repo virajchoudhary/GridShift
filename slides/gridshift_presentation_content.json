@@ -1,0 +1,506 @@
+{
+  "schema_version": 1,
+  "selections": {
+    "deployment_model": "calendar_mean",
+    "forecast_champion": "SARIMA(1,0,1)x(1,0,0,48)",
+    "strongest_simple": "persistence"
+  },
+  "slides": [
+    {
+      "bullets": [
+        "Study ID d2dee2d358735d7d",
+        "Target: NESO estimated GB intensity, gCO2/kWh"
+      ],
+      "figure": {
+        "alt": "Stored development-period carbon-intensity series",
+        "path": "C:\\Users\\viraj\\Documents\\Codex\\2026-10-22\\plan-gridshift-a-complete-ats-mini\\outputs\\GridShift\\artifacts\\diagnostics\\figures\\series.png"
+      },
+      "notes": "Introduce the study and its target. The figure is a stored development diagnostic, not a locked-test result. Source IDs S1-S8. See reports/gridshift_report.md References.",
+      "subtitle": "Carbon-aware GPU workload scheduling with classical time-series forecasts",
+      "title": "GridShift"
+    },
+    {
+      "bullets": [
+        "Do eligible forecasts improve feasible GPU placement?",
+        "Compare earliest execution and simple forecasts.",
+        "Model operational CO2, not avoided grid emissions.",
+        "Local recommendations are predictions, not measured savings."
+      ],
+      "figure": {
+        "alt": "Verified local GridShift scheduling workspace",
+        "path": "C:\\Users\\viraj\\Documents\\Codex\\2026-10-22\\plan-gridshift-a-complete-ats-mini\\outputs\\GridShift\\artifacts\\tests\\dashboard-desktop.png"
+      },
+      "notes": "The question is bounded by declared duration, energy, deadline, and capacity assumptions. Sources S1, S2, S4, S5, and S9.",
+      "title": "Dashboard and research scope"
+    },
+    {
+      "bullets": [
+        "Observed slots: 69950 of 70128.",
+        "Missing actuals remain missing; provider forecasts stay separate.",
+        "The quality gate and monthly coverage are reported from stored artifacts."
+      ],
+      "chart": {
+        "axis_title": "Observed share",
+        "categories": [
+          "2025-01",
+          "2025-02",
+          "2025-03",
+          "2025-04",
+          "2025-05",
+          "2025-06",
+          "2025-07",
+          "2025-08",
+          "2025-09",
+          "2025-10",
+          "2025-11",
+          "2025-12"
+        ],
+        "number_format_code": "0%",
+        "series": [
+          {
+            "color": "#127C74",
+            "name": "Coverage",
+            "values": [
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0,
+              1.0
+            ]
+          }
+        ],
+        "source": "full",
+        "title": "Monthly observed coverage",
+        "type": "line",
+        "y_max": 1,
+        "y_min": 0
+      },
+      "notes": "Quality values come from artifacts/data/quality.json. Monthly coverage chart source: C:\\Users\\viraj\\Documents\\Codex\\2026-10-22\\plan-gridshift-a-complete-ats-mini\\outputs\\GridShift\\artifacts\\data\\monthly_coverage.csv. Source IDs S1-S8. See reports/gridshift_report.md References.",
+      "table": {
+        "headers": [
+          "Measure",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Slots",
+            "70128"
+          ],
+          [
+            "Observed",
+            "69950"
+          ],
+          [
+            "Missing",
+            "178"
+          ],
+          [
+            "Overall coverage",
+            "0.9975"
+          ],
+          [
+            "Lowest monthly coverage",
+            "0.9388"
+          ],
+          [
+            "Lowest test-month coverage",
+            "1"
+          ],
+          [
+            "Unique UTC intervals",
+            "true"
+          ],
+          [
+            "Regular grid",
+            "true"
+          ],
+          [
+            "Data gate passed",
+            "true"
+          ],
+          [
+            "Assumed availability",
+            "true"
+          ]
+        ]
+      },
+      "title": "Data coverage and quality"
+    },
+    {
+      "bullets": [
+        "Diagnostic boundary: 2024-01-01T00:00:00+00:00.",
+        "Development-only STL status: ok.",
+        "ACF, periodogram, and stationarity checks guide candidates, not test conclusions."
+      ],
+      "figure": {
+        "alt": "Stored development-only robust STL components",
+        "path": "C:\\Users\\viraj\\Documents\\Codex\\2026-10-22\\plan-gridshift-a-complete-ats-mini\\outputs\\GridShift\\artifacts\\diagnostics\\figures\\stl48.png"
+      },
+      "notes": "The source files are diagnostics.json, adf.csv, kpss.csv, acf_pacf.csv, and the named figure. Centered STL is descriptive, not an online feature. Source IDs S9-S13. Diagnostic figures and tables come from artifacts/diagnostics.",
+      "title": "Development diagnostics"
+    },
+    {
+      "bullets": [
+        "AR, MA, ARMA, ARIMA, and daily-seasonal SARIMA.",
+        "Persistence, seasonal-naive, and calendar-mean controls.",
+        "Failed fits and null outcomes remain visible in the source tables."
+      ],
+      "notes": "These selections are read from results.json and are not recomputed from test data. Source IDs S9-S13. Validation and test rows come from the content-addressed forecast_metrics.csv files.",
+      "table": {
+        "headers": [
+          "Role",
+          "Recorded choice"
+        ],
+        "rows": [
+          [
+            "Forecast champion",
+            "SARIMA(1,0,1)x(1,0,0,48)"
+          ],
+          [
+            "Strongest simple baseline",
+            "persistence"
+          ],
+          [
+            "Scheduling model",
+            "calendar_mean"
+          ],
+          [
+            "Selection boundary",
+            "Validation only"
+          ]
+        ]
+      },
+      "title": "Forecast model catalogue"
+    },
+    {
+      "bullets": [
+        "Chronological development, validation, and locked-test partitions.",
+        "Common eligible targets and counts by lead time.",
+        "Paired block uncertainty for the primary scheduling contrast.",
+        "AIC and BIC compare only compatible likelihood groups."
+      ],
+      "notes": "Study settings come from the passed config. The full configuration digest appears in the report. Source IDs S9-S13. Validation and test rows come from the content-addressed forecast_metrics.csv files.",
+      "table": {
+        "headers": [
+          "Design item",
+          "Configured value"
+        ],
+        "rows": [
+          [
+            "Validation",
+            "2024-01-01T00:00:00Z to 2025-01-01T00:00:00Z"
+          ],
+          [
+            "Locked test",
+            "2025-01-01T00:00:00Z to 2026-01-01T00:00:00Z"
+          ],
+          [
+            "Horizons",
+            "[1, 4, 12, 24, 48]"
+          ],
+          [
+            "Bootstrap resamples",
+            "2000"
+          ]
+        ]
+      },
+      "title": "Evaluation design"
+    },
+    {
+      "bullets": [
+        "Validation champion: SARIMA(1,0,1)x(1,0,0,48).",
+        "Strongest simple baseline: persistence.",
+        "The chart shows MAE by lead time only where the source table has a numeric value."
+      ],
+      "chart": {
+        "axis_title": "MAE (gCO2/kWh)",
+        "categories": [
+          "1",
+          "4",
+          "12",
+          "24",
+          "48"
+        ],
+        "series": [
+          {
+            "color": "#D2644A",
+            "name": "SARIMA(1,0,1)x(1,0,0,48)",
+            "values": [
+              7.124229059485097,
+              15.047396000976466,
+              27.921913501436215,
+              33.815534833260116,
+              40.20508559879953
+            ]
+          },
+          {
+            "color": "#127C74",
+            "name": "persistence",
+            "values": [
+              8.781483134604349,
+              18.990114795918366,
+              35.440211842776925,
+              39.122733077905494,
+              41.434968698096334
+            ]
+          }
+        ],
+        "title": "Mean absolute error by lead time",
+        "type": "line"
+      },
+      "notes": "Validation scores are read from artifacts/runs/d2dee2d358735d7d/validation/forecast_metrics.csv. Source CSV tables and artifacts/results.json. No re-selection on test data.",
+      "table": {
+        "headers": [
+          "Model",
+          "Mean endpoint MAE"
+        ],
+        "rows": [
+          [
+            "SARIMA(1,0,1)x(1,0,0,48)",
+            "24.823"
+          ],
+          [
+            "persistence",
+            "28.754"
+          ]
+        ]
+      },
+      "title": "Validation forecast outcomes"
+    },
+    {
+      "bullets": [
+        "Test rows report the validation-selected champion and simple baseline.",
+        "The test does not change the selected model.",
+        "Null metrics and zero-count groups remain unfilled."
+      ],
+      "chart": {
+        "axis_title": "MAE (gCO2/kWh)",
+        "categories": [
+          "1",
+          "4",
+          "12",
+          "24",
+          "48"
+        ],
+        "series": [
+          {
+            "color": "#D2644A",
+            "name": "SARIMA(1,0,1)x(1,0,0,48)",
+            "values": [
+              6.926005204817896,
+              14.876816256256983,
+              27.78736609936195,
+              33.41171986353712,
+              39.26248490790846
+            ]
+          },
+          {
+            "color": "#127C74",
+            "name": "persistence",
+            "values": [
+              9.100516246583663,
+              20.068569693288794,
+              37.386334649256,
+              39.24998481627695,
+              39.804615851806865
+            ]
+          }
+        ],
+        "title": "Locked-test MAE by lead time",
+        "type": "line"
+      },
+      "notes": "Test scores are read from artifacts/runs/d2dee2d358735d7d/test/forecast_metrics.csv. Source CSV tables and artifacts/results.json. No re-selection on test data.",
+      "table": {
+        "headers": [
+          "Model",
+          "Mean endpoint MAE"
+        ],
+        "rows": [
+          [
+            "SARIMA(1,0,1)x(1,0,0,48)",
+            "24.453"
+          ],
+          [
+            "persistence",
+            "29.122"
+          ]
+        ]
+      },
+      "title": "Locked-test forecast outcomes"
+    },
+    {
+      "bullets": [
+        "Minimize forecast intensity integrated over full job energy.",
+        "Keep deadlines, capacity, and reservations as hard constraints.",
+        "Use an oracle only as an unattainable opportunity bound."
+      ],
+      "notes": "Scheduling values come from config. They are scenarios unless measured telemetry appears in a verified artifact. Source ID S5. Energy and emissions are modeled under config values.",
+      "table": {
+        "headers": [
+          "Declared assumption",
+          "Value"
+        ],
+        "rows": [
+          [
+            "Default duration (hours)",
+            "2"
+          ],
+          [
+            "Default slack (hours)",
+            "10"
+          ],
+          [
+            "Power (kW)",
+            "0.4"
+          ],
+          [
+            "PUE",
+            "1.2"
+          ],
+          [
+            "Primary model",
+            "calendar_mean"
+          ]
+        ]
+      },
+      "title": "Scheduling formulation"
+    },
+    {
+      "bullets": [
+        "calendar_mean: 12.414% modeled reduction against earliest execution.",
+        "95% paired block interval: 10.951% to 13.828%."
+      ],
+      "chart": {
+        "axis_title": "gCO2",
+        "categories": [
+          "earliest",
+          "seeded_random",
+          "oracle (oracle)",
+          "forecast"
+        ],
+        "series": [
+          {
+            "color": "#127C74",
+            "name": "Mean realized emissions",
+            "values": [
+              124.03246138002059,
+              123.52799176107105,
+              97.223728115345,
+              108.63505664263646
+            ]
+          }
+        ],
+        "title": "Mean realized emissions per eligible job",
+        "type": "bar"
+      },
+      "notes": "Primary summary rows come from C:\\Users\\viraj\\Documents\\Codex\\2026-10-22\\plan-gridshift-a-complete-ats-mini\\outputs\\GridShift\\artifacts\\runs\\d2dee2d358735d7d\\test\\single_job\\primary_summary.csv. Bootstrap uncertainty comes from C:\\Users\\viraj\\Documents\\Codex\\2026-10-22\\plan-gridshift-a-complete-ats-mini\\outputs\\GridShift\\artifacts\\runs\\d2dee2d358735d7d\\test\\single_job\\primary_bootstrap.csv. A simple deployment choice does not establish added scheduling value from classical forecasting. Modeled isolated-job benefit under declared assumptions. The certified seven-day paired block estimate is 12.414% (95% interval 10.951 to 13.828%) across 2913 scheduled primary-policy jobs; the bootstrap paired 2913 jobs. This estimates modeled operational CO2 under the declared job, energy, and deadline assumptions. Source CSV tables and artifacts/results.json. No re-selection on test data.",
+      "table": {
+        "headers": [
+          "Policy",
+          "Mean gCO2",
+          "Delta %"
+        ],
+        "rows": [
+          [
+            "earliest",
+            "124",
+            "NA"
+          ],
+          [
+            "oracle",
+            "97.22",
+            "21.61"
+          ],
+          [
+            "forecast",
+            "108.6",
+            "12.41"
+          ]
+        ]
+      },
+      "title": "Primary scheduling outcomes"
+    },
+    {
+      "bullets": [
+        "Table values are arithmetic means across the three frozen seeds.",
+        "Matched emissions differences are descriptive; accepted work differs.",
+        "Lower emissions from rejected work are not savings."
+      ],
+      "notes": "Queue summary rows come from C:\\Users\\viraj\\Documents\\Codex\\2026-10-22\\plan-gridshift-a-complete-ats-mini\\outputs\\GridShift\\artifacts\\runs\\d2dee2d358735d7d\\test\\queue\\queue_summary.csv. Full scenarios and policies remain in the source CSV and report. Source CSV table. Queue arrivals are synthetic and service outcomes remain part of the comparison.",
+      "table": {
+        "headers": [
+          "Load",
+          "Slack h",
+          "Reject early %",
+          "Reject selected %",
+          "Matched delta %"
+        ],
+        "rows": [
+          [
+            "0.3",
+            "6",
+            "0.48518",
+            "2.373",
+            "6.7787"
+          ],
+          [
+            "0.3",
+            "12",
+            "0.023624",
+            "0.36428",
+            "8.531"
+          ],
+          [
+            "0.6",
+            "6",
+            "3.6671",
+            "9.7095",
+            "4.3856"
+          ],
+          [
+            "0.6",
+            "12",
+            "0.41371",
+            "3.9073",
+            "5.1506"
+          ],
+          [
+            "0.85",
+            "6",
+            "9.7584",
+            "17.737",
+            "3.571"
+          ],
+          [
+            "0.85",
+            "12",
+            "3.8893",
+            "10.701",
+            "3.6974"
+          ]
+        ]
+      },
+      "title": "Queue service and emissions"
+    },
+    {
+      "bullets": [
+        "Job CO2 = sum(overlap hours x IT kW x PUE x intensity).",
+        "Choose the minimum integrated forecast cost; obey release, deadline, and capacity.",
+        "SARIMA uses AR, MA, and period-48 seasonal lag polynomials on differenced levels.",
+        "Missing or stale forecasts disable carbon ranking; failed fits retain explicit fallbacks.",
+        "Rejected queue work is not savings. Marginal intervals are not joint job-cost guarantees.",
+        "Frozen calendar_mean timing benefit and classical forecast skill are separate findings."
+      ],
+      "notes": "Backup notes: realized job CO2 is the sum over intervals of overlap energy in kWh times estimated intensity in gCO2/kWh. The forecast scheduler minimizes the same integrated expression using the eligible forecast path. Failure cases include missing forecasts, incomplete truth coverage, infeasible deadlines, failed model fits, and unmatched queue work. Preserve each outcome in the tables. Source ID S5. Energy and emissions are modeled under config values.",
+      "title": "Backup equations and failures"
+    }
+  ],
+  "study_id": "d2dee2d358735d7d"
+}

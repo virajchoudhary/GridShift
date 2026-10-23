@@ -1,0 +1,145 @@
+{
+  "adf": {
+    "autolag": [
+      "AIC",
+      "BIC"
+    ],
+    "deterministics": [
+      "c",
+      "ct"
+    ],
+    "maxlag_cap": 48,
+    "rows": 20
+  },
+  "artifacts": {
+    "figures": [
+      "series.png",
+      "representative_week.png",
+      "rolling_summary.png",
+      "distribution.png",
+      "monthly_distribution.png",
+      "missingness.png",
+      "weekday_local_profile.png",
+      "daily_slot_heatmap.png",
+      "periodogram.png",
+      "acf_pacf_levels.png",
+      "acf_pacf_differences.png",
+      "acf_pacf_daily.png",
+      "acf_pacf_weekly.png",
+      "stl48.png"
+    ],
+    "tables": [
+      "gaps.csv",
+      "monthly_coverage.csv",
+      "missing_by_local_hour.csv",
+      "distribution.csv",
+      "monthly_distribution.csv",
+      "year_season.csv",
+      "weekday_local_profile.csv",
+      "daily_slot_heatmap.csv",
+      "adf.csv",
+      "kpss.csv",
+      "acf_pacf.csv",
+      "periodogram.csv",
+      "stl48_components.csv",
+      "boxcox_teaching.csv",
+      "development_24h_windows.csv",
+      "rolling_summary.csv"
+    ]
+  },
+  "boxcox": {
+    "sample_n": 34893,
+    "status": "skipped_requires_strictly_positive_actuals",
+    "training_derived_offset": null
+  },
+  "development_end_exclusive_utc": "2024-01-01T00:00:00+00:00",
+  "development_only": true,
+  "development_opportunity": {
+    "interpretation": "Observed within-window range, not a forecast-savings estimate.",
+    "median_mean_minus_min": 43.1875,
+    "median_range": 89.0,
+    "median_relative_minimum_reduction": 0.299764705882353,
+    "status": "descriptive_complete_observed_windows_only",
+    "window_count": 34658,
+    "window_slots": 48
+  },
+  "dst_profile_note": "Europe/London profile groups repeated autumn local half-hours together; UTC grid and UTC diagnostics remain primary.",
+  "future_data_use": "All intervals starting on or after 2024-01-01T00:00:00Z were excluded.",
+  "grid_slots": 35040,
+  "input_absent_intervals": 91,
+  "input_start_utc": "2022-01-01T00:00:00+00:00",
+  "kpss_rows": 8,
+  "last_development_interval_start_utc": "2023-12-31T23:30:00+00:00",
+  "longest_adjusted_segment_slots": 12828,
+  "longest_observed_segment_slots": 12828,
+  "missing_actuals": 147,
+  "missing_policy": "Only gaps of at most two slots are filled, first from the observed same UTC slot on the previous day, otherwise from a past-only last observation within two slots; longer outages remain missing.",
+  "observed_actuals": 34893,
+  "periodogram_peaks": [
+    {
+      "frequency_cycles_per_day": 0.014967259120673527,
+      "period_days": 66.8125,
+      "power": 173.8780076113573
+    },
+    {
+      "frequency_cycles_per_day": 0.1421889616463985,
+      "period_days": 7.032894736842106,
+      "power": 151.23415636016088
+    },
+    {
+      "frequency_cycles_per_day": 0.026192703461178673,
+      "period_days": 38.17857142857142,
+      "power": 121.2428258011464
+    },
+    {
+      "frequency_cycles_per_day": 0.037418147801683815,
+      "period_days": 26.725,
+      "power": 112.03260286929319
+    },
+    {
+      "frequency_cycles_per_day": 2.001870907390084,
+      "period_days": 0.4995327102803738,
+      "power": 84.81699477895924
+    },
+    {
+      "frequency_cycles_per_day": 0.11599625818521983,
+      "period_days": 8.620967741935484,
+      "power": 74.97435965868209
+    },
+    {
+      "frequency_cycles_per_day": 0.05612722170252572,
+      "period_days": 17.816666666666666,
+      "power": 70.99336330466298
+    },
+    {
+      "frequency_cycles_per_day": 0.9990645463049579,
+      "period_days": 1.000936329588015,
+      "power": 65.64735610276115
+    },
+    {
+      "frequency_cycles_per_day": 0.07857811038353602,
+      "period_days": 12.726190476190476,
+      "power": 63.122650600836735
+    },
+    {
+      "frequency_cycles_per_day": 0.19083255378858746,
+      "period_days": 5.240196078431373,
+      "power": 58.93203793451805
+    }
+  ],
+  "schema_version": 1,
+  "seasonal_acf": {
+    "336": 0.2630689535368483,
+    "48": 0.5228903560937178
+  },
+  "short_gap_imputed_slots": 0,
+  "source_absence_note": "Raw source missingness ledger determines record presence.",
+  "stl48": {
+    "daily_seasonal_strength": 0.3966994280147945,
+    "period_slots": 48,
+    "reconstruction_max_abs_error": 5.684341886080802e-14,
+    "robust": true,
+    "sample_n": 12828,
+    "status": "ok"
+  }
+}

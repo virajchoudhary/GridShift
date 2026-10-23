@@ -1,0 +1,149 @@
+{
+  "cpu_count": 12,
+  "cpu_percent_snapshot": 36.6,
+  "fits": [
+    {
+      "aic": 54880.82630533326,
+      "converged": true,
+      "elapsed_seconds": 1.1842968000128167,
+      "finite_parameters": true,
+      "iterations": 15,
+      "k_states": 2,
+      "model": "AR",
+      "order": [
+        2,
+        0,
+        0
+      ],
+      "rss_after_fit_mb": 154.2578125,
+      "seasonal_order": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "warnings": []
+    },
+    {
+      "aic": 76394.40684102567,
+      "converged": true,
+      "elapsed_seconds": 4.021282499990775,
+      "finite_parameters": true,
+      "iterations": 29,
+      "k_states": 3,
+      "model": "MA",
+      "order": [
+        0,
+        0,
+        2
+      ],
+      "rss_after_fit_mb": 155.9140625,
+      "seasonal_order": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "warnings": []
+    },
+    {
+      "aic": 56063.35255901631,
+      "converged": true,
+      "elapsed_seconds": 1.625868699993589,
+      "finite_parameters": true,
+      "iterations": 17,
+      "k_states": 2,
+      "model": "ARMA",
+      "order": [
+        1,
+        0,
+        1
+      ],
+      "rss_after_fit_mb": 155.93359375,
+      "seasonal_order": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "warnings": []
+    },
+    {
+      "aic": 54776.794972015356,
+      "converged": true,
+      "elapsed_seconds": 0.38484820000303444,
+      "finite_parameters": true,
+      "iterations": 7,
+      "k_states": 3,
+      "model": "ARIMA",
+      "order": [
+        1,
+        1,
+        1
+      ],
+      "rss_after_fit_mb": 155.9375,
+      "seasonal_order": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "warnings": []
+    },
+    {
+      "aic": 56768.80331174273,
+      "converged": true,
+      "elapsed_seconds": 40.065250200001174,
+      "finite_parameters": true,
+      "iterations": 22,
+      "k_states": 49,
+      "model": "SARIMA_AR",
+      "order": [
+        1,
+        0,
+        0
+      ],
+      "rss_after_fit_mb": 165.671875,
+      "seasonal_order": [
+        1,
+        0,
+        0,
+        48
+      ],
+      "warnings": []
+    },
+    {
+      "aic": 82167.32897017739,
+      "converged": true,
+      "elapsed_seconds": 34.68709900000249,
+      "finite_parameters": true,
+      "iterations": 22,
+      "k_states": 50,
+      "model": "SARIMA_MA",
+      "order": [
+        0,
+        0,
+        1
+      ],
+      "rss_after_fit_mb": 166.515625,
+      "seasonal_order": [
+        0,
+        0,
+        1,
+        48
+      ],
+      "warnings": [
+        "Non-invertible starting seasonal moving average Using zeros as starting parameters."
+      ]
+    }
+  ],
+  "maxiter": 80,
+  "missing": 91,
+  "platform": "Windows-11-10.0.26300-SP0",
+  "purpose": "single-run training-only feasibility, not comparative speedup",
+  "rss_is_not_peak_memory": true,
+  "slots": 8640,
+  "statsmodels": "0.14.6",
+  "training_end": "2023-12-31 23:00:00+00:00",
+  "training_start": "2023-07-04 23:30:00+00:00"
+}

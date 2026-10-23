@@ -1,0 +1,18 @@
+{
+  "reviewer_model": "azure-kmamc/gpt-6-luna",
+  "reasoning_effort": "max",
+  "queue_semantics": "PASS",
+  "freeze_boundary_at_review": "FAIL",
+  "executed_queue_tests": 4,
+  "synthetic_trace_combinations_checked": 18,
+  "future_missingness_applied_after_decisions": true,
+  "continuous_monthly_capacity": true,
+  "service_intersection_labels_checked": true,
+  "findings": [
+    "Lower-level experiment functions must enforce 2025 lock",
+    "CLI and runner changes must invalidate scientific software hash",
+    "Actual Parquet bytes must be checked at freeze boundary",
+    "Rejected test access must not create output directories"
+  ],
+  "correction_state": "Implemented; fresh boundary recheck pending"
+}

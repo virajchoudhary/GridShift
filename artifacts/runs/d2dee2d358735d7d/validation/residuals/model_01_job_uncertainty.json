@@ -1,0 +1,17 @@
+{
+  "chosen_start": "2024-12-01 00:00:00+00:00",
+  "duration_hours": 2,
+  "energy_kwh": 0.96,
+  "lower80": 72.01490588507164,
+  "lower95": 63.79528515759934,
+  "mean_grams": 93.00789516415581,
+  "median_grams": 91.14734959995496,
+  "method": "Joint conditional state-space paths with fixed fitted parameters",
+  "model_id": "MA(0,0,8)[log1p]",
+  "origin": "2024-12-01 00:00:00+00:00",
+  "scope": "Representative validation conditional joint-path example; not calibrated job-cost coverage",
+  "simulations": 1000,
+  "std_grams": 17.666665483232848,
+  "upper80": 117.20350217107931,
+  "upper95": 130.20279373450208
+}

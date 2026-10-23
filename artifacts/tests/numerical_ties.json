@@ -1,0 +1,9 @@
+{
+  "decision_sha256": "f7d01863688fe279063a1a6d44f2435f05584553c032232aad1214d13b24963f",
+  "inspected_minimum_decisions": 611710,
+  "mismatch_count": 0,
+  "mismatches": [],
+  "passed": true,
+  "scope": "All saved validation oracle and forecast starts recomputed with the current shared tie rule",
+  "software_hash": "16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0"
+}

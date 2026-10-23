@@ -1,0 +1,4 @@
+block_days,effective_block_days,n_resamples,paired_job_count,calendar_days,estimate_savings_grams,estimate_savings_grams_per_job,estimate_savings_pct,ci95_savings_grams_per_job_low,ci95_savings_grams_per_job_high,ci95_savings_pct_low,ci95_savings_pct_high,valid_resamples,is_primary_block,scenario_id,policy,model_id,validation_selected_model
+3,3,2000,2912,366,45435.84,15.602967032967031,12.981413393931,14.291221737964706,17.011566289825282,11.783325608081737,14.206506742104395,2000,False,duration_2h_slack_10h,forecast,calendar_mean,calendar_mean
+7,7,2000,2912,366,45435.84,15.602967032967031,12.981413393931,14.152055498458374,16.93764740198473,11.468599471521141,14.372369576325708,2000,True,duration_2h_slack_10h,forecast,calendar_mean,calendar_mean
+14,14,2000,2912,366,45435.84,15.602967032967031,12.981413393931,14.157171134020622,16.985028217543785,11.507253114986284,14.659804195662563,2000,False,duration_2h_slack_10h,forecast,calendar_mean,calendar_mean

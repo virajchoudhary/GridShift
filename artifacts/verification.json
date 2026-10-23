@@ -1,0 +1,332 @@
+{
+  "checks": {
+    "dashboard": {
+      "details": {
+        "desktop": [
+          1440,
+          960
+        ],
+        "mobile": [
+          390,
+          844
+        ],
+        "views": 5
+      },
+      "status": "PASS"
+    },
+    "data": {
+      "details": {
+        "data_hash": "f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e",
+        "normalized_slots": 70128,
+        "observed": 69950,
+        "raw_chunks": 209
+      },
+      "status": "PASS"
+    },
+    "deployment": {
+      "details": {
+        "fixture": {
+          "max_mean_absolute_difference": 0.0,
+          "model_id": "calendar_mean",
+          "observation_state": "fresh",
+          "origin": "2026-01-01 00:00:00+00:00",
+          "realized_result": "not scored",
+          "verified": true
+        },
+        "kind": "baseline",
+        "model": "calendar_mean"
+      },
+      "status": "PASS"
+    },
+    "diagnostics": {
+      "details": {
+        "files_present": 14,
+        "interpretation_reviewed": false
+      },
+      "status": "PASS"
+    },
+    "exports": {
+      "details": {
+        "notes": 12,
+        "outputs": 21,
+        "presentation_pdf_pages": 12,
+        "report_pages": 25,
+        "slides": 12
+      },
+      "status": "PASS"
+    },
+    "forecasts": {
+      "details": {
+        "cutoff_rule": "origin minus 2 half-hour slots",
+        "files": [
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\model_00.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\model_03.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\model_02.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\model_01.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\model_04.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\calendar_mean.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\daily_naive.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\persistence.npz",
+          "artifacts\\runs\\d2dee2d358735d7d\\test\\forecasts\\weekly_naive.npz"
+        ],
+        "horizon_slots": 48,
+        "models": 9,
+        "origins": 17473
+      },
+      "status": "PASS"
+    },
+    "identity": {
+      "details": {
+        "data_hash": "f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e",
+        "deployment_model": "calendar_mean",
+        "protocol_hash": "b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c",
+        "run_dir": "artifacts/runs/d2dee2d358735d7d",
+        "software_hash": "16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0",
+        "study_id": "d2dee2d358735d7d"
+      },
+      "status": "PASS"
+    },
+    "notebook": {
+      "details": {
+        "code_cells": 10,
+        "errors": 0,
+        "html": "notebooks\\01_gridshift_study.html"
+      },
+      "status": "PASS"
+    },
+    "primary": {
+      "details": {
+        "decisions": 734076,
+        "jobs": 2913,
+        "max_error_grams": 0.0,
+        "pairs": 672903,
+        "sample": 64
+      },
+      "status": "PASS"
+    },
+    "queue": {
+      "details": {
+        "policies_per_trace": 3,
+        "reservations": 136675,
+        "traces": 18
+      },
+      "status": "PASS"
+    },
+    "tests": {
+      "details": {
+        "errors": 0,
+        "failures": 0,
+        "software_hash": "16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0",
+        "tests": 95
+      },
+      "status": "PASS"
+    }
+  },
+  "fresh_review_required": false,
+  "identity": {
+    "data_hash": "f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e",
+    "deployment_model": "calendar_mean",
+    "protocol_hash": "b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c",
+    "run_dir": "artifacts/runs/d2dee2d358735d7d",
+    "software_hash": "16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0",
+    "study_id": "d2dee2d358735d7d"
+  },
+  "overall_status": "PASS",
+  "requirements": [
+    {
+      "evidence": "identity: {'data_hash': 'f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e', 'protocol_hash': 'b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c', 'study_id': 'd2dee2d358735d7d', 'software_hash': '16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0', 'run_dir': 'artifacts/runs/d2dee2d358735d7d', 'deployment_model': 'calendar_mean'}; data: {'raw_chunks': 209, 'normalized_slots': 70128, 'observed': 69950, 'data_hash': 'f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e'}",
+      "id": "R01",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Official data"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; review: Both current declared reviews match the evidence basis",
+      "id": "R02",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "EDA"
+    },
+    {
+      "evidence": "data: {'raw_chunks': 209, 'normalized_slots': 70128, 'observed': 69950, 'data_hash': 'f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e'}; diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; review: Both current declared reviews match the evidence basis",
+      "id": "R03",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Missing values"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; review: Both current declared reviews match the evidence basis",
+      "id": "R04",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "ADF"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; forecasts: {'models': 9, 'origins': 17473, 'horizon_slots': 48, 'cutoff_rule': 'origin minus 2 half-hour slots', 'files': ['artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_00.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_03.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_02.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_01.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_04.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\calendar_mean.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\daily_naive.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\persistence.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\weekly_naive.npz']}; review: Both current declared reviews match the evidence basis",
+      "id": "R05",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Transformations"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; review: Both current declared reviews match the evidence basis",
+      "id": "R06",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "STL"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; review: Both current declared reviews match the evidence basis",
+      "id": "R07",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "ACF/PACF"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; notebook: {'code_cells': 10, 'errors': 0, 'html': 'notebooks\\\\01_gridshift_study.html'}; review: Both current declared reviews match the evidence basis",
+      "id": "R08",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "AR"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; notebook: {'code_cells': 10, 'errors': 0, 'html': 'notebooks\\\\01_gridshift_study.html'}; review: Both current declared reviews match the evidence basis",
+      "id": "R09",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "MA"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; notebook: {'code_cells': 10, 'errors': 0, 'html': 'notebooks\\\\01_gridshift_study.html'}; review: Both current declared reviews match the evidence basis",
+      "id": "R10",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "ARMA"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; forecasts: {'models': 9, 'origins': 17473, 'horizon_slots': 48, 'cutoff_rule': 'origin minus 2 half-hour slots', 'files': ['artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_00.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_03.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_02.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_01.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_04.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\calendar_mean.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\daily_naive.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\persistence.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\weekly_naive.npz']}; review: Both current declared reviews match the evidence basis",
+      "id": "R11",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "ARIMA"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; forecasts: {'models': 9, 'origins': 17473, 'horizon_slots': 48, 'cutoff_rule': 'origin minus 2 half-hour slots', 'files': ['artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_00.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_03.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_02.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_01.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_04.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\calendar_mean.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\daily_naive.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\persistence.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\weekly_naive.npz']}; review: Both current declared reviews match the evidence basis",
+      "id": "R12",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "SARIMA"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; review: Both current declared reviews match the evidence basis",
+      "id": "R13",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Lag selection"
+    },
+    {
+      "evidence": "diagnostics: {'files_present': 14, 'interpretation_reviewed': False}; review: Both current declared reviews match the evidence basis",
+      "id": "R14",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "AIC/BIC"
+    },
+    {
+      "evidence": "identity: {'data_hash': 'f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e', 'protocol_hash': 'b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c', 'study_id': 'd2dee2d358735d7d', 'software_hash': '16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0', 'run_dir': 'artifacts/runs/d2dee2d358735d7d', 'deployment_model': 'calendar_mean'}; forecasts: {'models': 9, 'origins': 17473, 'horizon_slots': 48, 'cutoff_rule': 'origin minus 2 half-hour slots', 'files': ['artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_00.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_03.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_02.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_01.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_04.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\calendar_mean.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\daily_naive.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\persistence.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\weekly_naive.npz']}",
+      "id": "R15",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Forecast comparison"
+    },
+    {
+      "evidence": "primary: {'decisions': 734076, 'pairs': 672903, 'jobs': 2913, 'sample': 64, 'max_error_grams': 0.0}; queue: {'traces': 18, 'policies_per_trace': 3, 'reservations': 136675}",
+      "id": "R16",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Scheduling"
+    },
+    {
+      "evidence": "dashboard: {'views': 5, 'desktop': [1440, 960], 'mobile': [390, 844]}; tests: {'tests': 95, 'failures': 0, 'errors': 0, 'software_hash': '16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0'}; review: Both current declared reviews match the evidence basis",
+      "id": "R17",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Dashboard"
+    },
+    {
+      "evidence": "notebook: {'code_cells': 10, 'errors': 0, 'html': 'notebooks\\\\01_gridshift_study.html'}",
+      "id": "R18",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Notebook"
+    },
+    {
+      "evidence": "exports: {'outputs': 21, 'slides': 12, 'notes': 12, 'report_pages': 25, 'presentation_pdf_pages': 12}; review: Both current declared reviews match the evidence basis",
+      "id": "R19",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Report"
+    },
+    {
+      "evidence": "exports: {'outputs': 21, 'slides': 12, 'notes': 12, 'report_pages': 25, 'presentation_pdf_pages': 12}; review: Both current declared reviews match the evidence basis",
+      "id": "R20",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Presentation"
+    },
+    {
+      "evidence": "identity: {'data_hash': 'f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e', 'protocol_hash': 'b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c', 'study_id': 'd2dee2d358735d7d', 'software_hash': '16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0', 'run_dir': 'artifacts/runs/d2dee2d358735d7d', 'deployment_model': 'calendar_mean'}; deployment: {'model': 'calendar_mean', 'kind': 'baseline', 'fixture': {'verified': True, 'model_id': 'calendar_mean', 'origin': '2026-01-01 00:00:00+00:00', 'max_mean_absolute_difference': 0.0, 'observation_state': 'fresh', 'realized_result': 'not scored'}}",
+      "id": "R21",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Local deployment"
+    },
+    {
+      "evidence": "tests: {'tests': 95, 'failures': 0, 'errors': 0, 'software_hash': '16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0'}",
+      "id": "R22",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Tests"
+    },
+    {
+      "evidence": "identity: {'data_hash': 'f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e', 'protocol_hash': 'b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c', 'study_id': 'd2dee2d358735d7d', 'software_hash': '16d9038d1d153c6d68293c5cc8ef0a902381366d5b8ecd993c9cccf03477fda0', 'run_dir': 'artifacts/runs/d2dee2d358735d7d', 'deployment_model': 'calendar_mean'}; data: {'raw_chunks': 209, 'normalized_slots': 70128, 'observed': 69950, 'data_hash': 'f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e'}; forecasts: {'models': 9, 'origins': 17473, 'horizon_slots': 48, 'cutoff_rule': 'origin minus 2 half-hour slots', 'files': ['artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_00.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_03.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_02.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_01.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\model_04.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\calendar_mean.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\daily_naive.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\persistence.npz', 'artifacts\\\\runs\\\\d2dee2d358735d7d\\\\test\\\\forecasts\\\\weekly_naive.npz']}",
+      "id": "R23",
+      "next_action": "None for this executable check.",
+      "status": "PASS",
+      "title": "Reproducibility"
+    }
+  ],
+  "review_evidence": {
+    "basis_sha256": "99c16670128afd65cc48ea444e346179cf4ecf637194dfb9f3201b02b038e3d0",
+    "decisions": {
+      "R02": "PASS",
+      "R03": "PASS",
+      "R04": "PASS",
+      "R05": "PASS",
+      "R06": "PASS",
+      "R07": "PASS",
+      "R08": "PASS",
+      "R09": "PASS",
+      "R10": "PASS",
+      "R11": "PASS",
+      "R12": "PASS",
+      "R13": "PASS",
+      "R14": "PASS",
+      "R17": "PASS",
+      "R19": "PASS",
+      "R20": "PASS"
+    },
+    "details": "Both current declared reviews match the evidence basis",
+    "reviewers": [
+      "Codex Sol root",
+      "/root/backup_final_recheck"
+    ],
+    "status": "PASS"
+  },
+  "schema_version": 1,
+  "scope": "Bounded offline artifact checks; not scientific certification.",
+  "summary": {
+    "fail": 0,
+    "partial": 0,
+    "pass": 23
+  }
+}

@@ -1,0 +1,9 @@
+# Research manifests bind file bytes, including original line endings.
+* -text
+*.pdf binary
+*.pptx binary
+*.png binary
+*.npz binary
+*.parquet binary
+*.gz binary
+*.zip binary

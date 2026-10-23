@@ -1,0 +1,8 @@
+job_id,scenario_id,origin,release,deadline,duration_hours,slack_hours,reason,missing_truth_slots
+duration_2h_slack_10h@2024-07-03T03:00:00+00:00,duration_2h_slack_10h,2024-07-03 03:00:00+00:00,2024-07-03 03:00:00+00:00,2024-07-03 15:00:00+00:00,2.0,10.0,48-slot forecast path extends beyond evaluation end,0
+duration_2h_slack_10h@2024-07-03T06:00:00+00:00,duration_2h_slack_10h,2024-07-03 06:00:00+00:00,2024-07-03 06:00:00+00:00,2024-07-03 18:00:00+00:00,2.0,10.0,48-slot forecast path extends beyond evaluation end,0
+duration_2h_slack_10h@2024-07-03T09:00:00+00:00,duration_2h_slack_10h,2024-07-03 09:00:00+00:00,2024-07-03 09:00:00+00:00,2024-07-03 21:00:00+00:00,2.0,10.0,48-slot forecast path extends beyond evaluation end,0
+duration_2h_slack_10h@2024-07-03T12:00:00+00:00,duration_2h_slack_10h,2024-07-03 12:00:00+00:00,2024-07-03 12:00:00+00:00,2024-07-04 00:00:00+00:00,2.0,10.0,48-slot forecast path extends beyond evaluation end,0
+duration_2h_slack_10h@2024-07-03T15:00:00+00:00,duration_2h_slack_10h,2024-07-03 15:00:00+00:00,2024-07-03 15:00:00+00:00,2024-07-04 03:00:00+00:00,2.0,10.0,48-slot forecast path extends beyond evaluation end,0
+duration_2h_slack_10h@2024-07-03T18:00:00+00:00,duration_2h_slack_10h,2024-07-03 18:00:00+00:00,2024-07-03 18:00:00+00:00,2024-07-04 06:00:00+00:00,2.0,10.0,48-slot forecast path extends beyond evaluation end,0
+duration_2h_slack_10h@2024-07-03T21:00:00+00:00,duration_2h_slack_10h,2024-07-03 21:00:00+00:00,2024-07-03 21:00:00+00:00,2024-07-04 09:00:00+00:00,2.0,10.0,48-slot forecast path extends beyond evaluation end,0

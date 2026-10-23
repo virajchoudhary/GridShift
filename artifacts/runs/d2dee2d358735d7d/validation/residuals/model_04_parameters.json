@@ -1,0 +1,33 @@
+{
+  "parameter_names": [
+    "intercept",
+    "ar.L1",
+    "ma.L1",
+    "ar.S.L48",
+    "sigma2"
+  ],
+  "parameters": [
+    0.9743660211529825,
+    0.9855773726669808,
+    0.3986355202136328,
+    0.4526282610208763,
+    30.146074350618196
+  ],
+  "spec": {
+    "family": "SARIMA",
+    "name": "SARIMA(1,0,1)x(1,0,0,48)",
+    "order": [
+      1,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      0,
+      48
+    ],
+    "transform": "identity"
+  },
+  "training_cutoff": "2024-11-30 23:00:00+00:00"
+}

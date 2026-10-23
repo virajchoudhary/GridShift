@@ -1,0 +1,17 @@
+{
+  "reviewer_model": "azure-kmamc/gpt-6-luna",
+  "reasoning_effort": "max",
+  "verdict": "PASS for shared-GPU implementation; HOLD 2025 until freeze guards corrected",
+  "synthetic_and_development_checks": 26,
+  "additional_targeted_checks": 2,
+  "sequential_batch_max_mean_difference": 4.26e-14,
+  "sequential_batch_max_std_difference": 1.78e-15,
+  "future_mutation_first_origin_max_difference": 0.0,
+  "mase_max_reference_difference": 3.11e-15,
+  "collected_test_data_scored": false,
+  "findings": [
+    "Enforce software and config freeze compatibility before test",
+    "Use prefix-sum MASE in primary evaluator",
+    "Keep symmetric normal diagnostic coverage separate from native asymmetric intervals"
+  ]
+}

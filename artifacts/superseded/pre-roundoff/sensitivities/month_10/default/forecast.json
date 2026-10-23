@@ -1,0 +1,90 @@
+{
+  "bridge_slots": 1,
+  "fallback_count": 0,
+  "fit_count": 1,
+  "forecast_file": "forecast.npz",
+  "forecast_sha256": "4955d52942aa12f166edd173b6703a8c39f2d2712537f76af46d5ec68d72f0b8",
+  "forecast_start": "2024-10-01T00:00:00+00:00",
+  "horizon_slots": 48,
+  "intervals": {
+    "fallback": "daily seasonal naive with training daily-error scale",
+    "identity": "Gaussian state-space predictive distribution",
+    "levels": [
+      0.8,
+      0.95
+    ],
+    "log1p": "inverse lognormal predictive quantiles"
+  },
+  "last_origin": "2024-10-03T00:00:00+00:00",
+  "libraries": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3",
+    "python": "3.13.4",
+    "scipy": "1.18.1",
+    "statsmodels": "0.14.6"
+  },
+  "likelihood": {
+    "enforce_invertibility": true,
+    "enforce_stationarity": true,
+    "initialization": "stationary",
+    "loglikelihood_burn": 96,
+    "missing_policy": "short_gap"
+  },
+  "metrics_file": "forecast.metrics.csv",
+  "metrics_schema": [
+    "group_type",
+    "group",
+    "horizon",
+    "n",
+    "mae",
+    "rmse",
+    "mean_error",
+    "mase",
+    "coverage80",
+    "coverage95",
+    "width80",
+    "width95",
+    "interval_score80",
+    "interval_score95",
+    "fallback_origins"
+  ],
+  "model_spec": {
+    "family": "SARIMA",
+    "name": "SARIMA(1,0,1)x(1,0,0,48)",
+    "order": [
+      1,
+      0,
+      1
+    ],
+    "seasonal_order": [
+      1,
+      0,
+      0,
+      48
+    ],
+    "transform": "identity"
+  },
+  "operational_negative_correction": "none; raw negative point forecasts are retained",
+  "origin_count": 97,
+  "publication_delay_slots": 1,
+  "raw_negative_forecast_count": 0,
+  "refit_days": 7,
+  "refits": [
+    {
+      "block_seconds": 46.79009309998946,
+      "causal_states_captured": 97,
+      "converged": true,
+      "fit_seconds": 46.71345320000546,
+      "origins": 97,
+      "refit_origin": "2024-10-01T00:00:00+00:00",
+      "status": "converged",
+      "training_cutoff": "2024-09-30T23:00:00+00:00",
+      "training_start": "2024-04-04T00:00:00+00:00"
+    }
+  ],
+  "runtime_seconds": 46.94864710001275,
+  "schema_version": 1,
+  "stage_end_exclusive": "2024-10-04T00:00:00+00:00",
+  "target_access_order": "NPZ persisted before future actuals are joined for scoring",
+  "training_window_days": 180
+}

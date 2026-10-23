@@ -1,0 +1,16 @@
+{
+  "data_hash": "f57548d5bc197f884b5b35bb84faaaadcb38b7b46dc3e8c925a150b8ea5a5a1e",
+  "file": "baseline_history.parquet",
+  "file_hash": "54a38807fbb84089b672c1ce8f69954afc5fff05160d9351d55c6f1fd809cbf6",
+  "fixture_hash": "43c903b2b33b82a7e8f5215fe137e0f00e79bec1b928fe2af48b8c375ccec04d",
+  "kind": "baseline",
+  "library_versions": {
+    "numpy": "2.5.4",
+    "pandas": "2.3.3"
+  },
+  "model_id": "calendar_mean",
+  "origin": "2026-01-01 00:00:00+00:00",
+  "protocol_hash": "b6876f7c8f058f9242eb5852a580384bfa0a1365c76f69a509fa975f8377c68c",
+  "schema_version": 1,
+  "training_cutoff": "2025-12-31 23:00:00+00:00"
+}

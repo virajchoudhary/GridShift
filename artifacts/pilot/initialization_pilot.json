@@ -1,0 +1,167 @@
+{
+  "runs": [
+    {
+      "aic": 56148.96935945279,
+      "burn": 96,
+      "converged": true,
+      "initialization": "stationary",
+      "n_effective": 8544,
+      "parameters": [
+        0.6596618366547374,
+        0.9927960648116488,
+        0.38584744931731024,
+        44.80330451329268
+      ],
+      "repeat": 0,
+      "seconds": 38.49218870000914,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945327,
+      "burn": 96,
+      "converged": true,
+      "initialization": "approximate_diffuse",
+      "n_effective": 8544,
+      "parameters": [
+        0.659661872273723,
+        0.9927960644127864,
+        0.3858474493430551,
+        44.803304491835554
+      ],
+      "repeat": 0,
+      "seconds": 39.74377020000247,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945279,
+      "burn": 96,
+      "converged": true,
+      "initialization": "stationary",
+      "n_effective": 8544,
+      "parameters": [
+        0.6596618366547374,
+        0.9927960648116488,
+        0.38584744931731024,
+        44.80330451329268
+      ],
+      "repeat": 1,
+      "seconds": 39.79499720000604,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945327,
+      "burn": 96,
+      "converged": true,
+      "initialization": "approximate_diffuse",
+      "n_effective": 8544,
+      "parameters": [
+        0.659661872273723,
+        0.9927960644127864,
+        0.3858474493430551,
+        44.803304491835554
+      ],
+      "repeat": 1,
+      "seconds": 51.73031379999884,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945279,
+      "burn": 96,
+      "converged": true,
+      "initialization": "stationary",
+      "n_effective": 8544,
+      "parameters": [
+        0.6596618366547374,
+        0.9927960648116488,
+        0.38584744931731024,
+        44.80330451329268
+      ],
+      "repeat": 2,
+      "seconds": 39.94729250000091,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945327,
+      "burn": 96,
+      "converged": true,
+      "initialization": "approximate_diffuse",
+      "n_effective": 8544,
+      "parameters": [
+        0.659661872273723,
+        0.9927960644127864,
+        0.3858474493430551,
+        44.803304491835554
+      ],
+      "repeat": 2,
+      "seconds": 45.79808860000048,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945279,
+      "burn": 96,
+      "converged": true,
+      "initialization": "stationary",
+      "n_effective": 8544,
+      "parameters": [
+        0.6596618366547374,
+        0.9927960648116488,
+        0.38584744931731024,
+        44.80330451329268
+      ],
+      "repeat": 3,
+      "seconds": 53.95307310001226,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945327,
+      "burn": 96,
+      "converged": true,
+      "initialization": "approximate_diffuse",
+      "n_effective": 8544,
+      "parameters": [
+        0.659661872273723,
+        0.9927960644127864,
+        0.3858474493430551,
+        44.803304491835554
+      ],
+      "repeat": 3,
+      "seconds": 47.33735750000051,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945279,
+      "burn": 96,
+      "converged": true,
+      "initialization": "stationary",
+      "n_effective": 8544,
+      "parameters": [
+        0.6596618366547374,
+        0.9927960648116488,
+        0.38584744931731024,
+        44.80330451329268
+      ],
+      "repeat": 4,
+      "seconds": 51.06746440001007,
+      "warnings": []
+    },
+    {
+      "aic": 56148.96935945327,
+      "burn": 96,
+      "converged": true,
+      "initialization": "approximate_diffuse",
+      "n_effective": 8544,
+      "parameters": [
+        0.659661872273723,
+        0.9927960644127864,
+        0.3858474493430551,
+        44.803304491835554
+      ],
+      "repeat": 4,
+      "seconds": 47.201852699989104,
+      "warnings": []
+    }
+  ],
+  "scope": "Training2023 only;5interleaved runs; sharedburn96; BLAS1thread",
+  "training_end": "2023-12-31 23:00:00+00:00",
+  "training_start": "2023-07-04 23:30:00+00:00"
+}

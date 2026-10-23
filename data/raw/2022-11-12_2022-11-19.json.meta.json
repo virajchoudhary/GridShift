@@ -1,0 +1,12 @@
+{
+  "headers": {
+    "Content-Type": "application/json",
+    "Date": "Thu, 22 Oct 2026 17:07:11 GMT",
+    "ETag": null,
+    "Last-Modified": null
+  },
+  "raw_hash": "d11dd0854a4291c25fe549634af8449ac218f642dd28c4222f7661f2a9036acc",
+  "retrieved_at_utc": "2026-10-22T17:07:11.675422+00:00",
+  "status": 200,
+  "url": "https://api.carbonintensity.org.uk/intensity/2022-11-12T00:00Z/2022-11-19T00:00Z"
+}

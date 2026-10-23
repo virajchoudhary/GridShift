@@ -1,0 +1,21 @@
+# Pre-test protocol amendments
+
+These decisions precede locked 2025 performance evaluation.
+
+1. Retain the native half-hour grid. The training-only pilot in `artifacts/pilot/initialization_pilot.json` records five interleaved fits for each initialization. Each seasonal fit required tens of seconds. No initialization speed advantage is established.
+2. Limit SARIMA to four declared seasonal structures per transformation. Preserve all planned nonseasonal order ranges, twelve monthly anchors, and the ten-anchor convergence gate. The explicit structures are in `forecasting._REDUCED_SEASONAL_ORDERS`.
+3. Retain one order per comparable group. This is within the approved maximum of three. Compare identity and log1p groups on chronological validation loss, never on pooled information criteria.
+4. Include first-integrated ARIMA as a restricted comparison. Development ADF rejects a unit root in levels under both deterministic regressions. Differencing is not required by that test, and an ARIMA win cannot retroactively justify it.
+5. Set seasonal differencing to zero in the production catalogue. Seasonal differences and combined differences remain executed diagnostic examples. Test-set outcomes cannot change this choice.
+6. Disable unused parameter covariance estimation. Prediction covariance still comes from the state-space filter. Parameter-estimation uncertainty is not included in predictive intervals. Means and variances must reproduce direct statsmodels calculations.
+7. Batch weekly fixed-parameter filtering. Extract causal filtered states, not smoothed states. Missing update values are computed only from their eligible prefix.
+8. Clamp negative point forecasts to zero inside both scheduling optimizers. Keep raw forecasts unchanged for statistical scoring. The development-only batched SARIMA pilot produced 24 negative forecast slots among 289 forecast paths. Clipping is an operational nonnegative-intensity constraint, not a test-loss adjustment.
+9. The secondary fixed-horizon facility scenario assumes 0.08 kW IT power when the GPU is idle and 0.4 kW allocated IT power while a job runs. PUE applies once. The horizon includes warm-up reservations that occupy the scoring year. This energy assumption is synthetic, and fewer completed jobs cannot establish a fixed-work saving.
+10. Bind direct test-period inputs to frozen normalized source values. Accept only the exact frozen study and derived scheduling configuration, including seeds and validation-selection metadata. Verify forecast checksums, model identity, and the modeled information cutoff before backtests.
+11. Bind passing pretest tests to the current scientific source hash and JUnit bytes. Seal selection, diagnostics, raw snapshots, sensitivities, and byte-identical specification copies alongside validation artifacts.
+12. Demonstrate combined differencing on development data as an explicitly restricted teaching example. This does not change production d or D. Box-Cox remains inappropriate without a justified positive offset because the observed development target contains valid zeros.
+13. Run six forecasting sensitivities on four three-day quarterly validation episodes. Add an equal-energy nonconstant-profile comparison and four injected six-hour operational outages. These bounded checks cannot establish full-year robustness.
+14. Demonstrate job-cost uncertainty with 1,000 joint conditional state-space paths for representative validation fits. Preserve serial dependence and exclude parameter-estimation uncertainty. These examples do not establish calibrated job-cost intervals or a risk-aware scheduling guarantee.
+15. Resolve candidate costs within 32 machine epsilons of the largest absolute candidate cost as numerical ties. Independent validation review found floating-point accumulation selected later equal-sum windows. Use the same earliest-minimum selector in forecast, reservation, and oracle scheduling. Retain superseded validation scheduling artifacts and regenerate them before freeze; this tolerance is numerical, not the separate 1% model-selection rule.
+
+The study remains pseudo-real-time. It uses retrospective NESO estimated actuals and an assumed thirty-minute publication delay. No forecast-vintage archive or real GPU telemetry is available.

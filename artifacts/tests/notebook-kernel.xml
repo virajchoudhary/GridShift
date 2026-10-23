@@ -1,0 +1,1 @@
+<?xml version="1.0" encoding="utf-8"?><testsuites name="pytest tests"><testsuite name="pytest" errors="0" failures="0" skipped="0" tests="1" time="20.273" timestamp="2026-10-23T00:41:56.636720+05:30" hostname="LenLaptop"><testcase classname="tests.test_notebook_execution" name="test_notebook_executes_in_a_private_kernel_prefix" time="18.353" /></testsuite></testsuites>

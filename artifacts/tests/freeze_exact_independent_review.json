@@ -1,0 +1,17 @@
+{
+  "verdict": "PASS",
+  "scope": "Direct primary_backtest exact frozen study and scheduling configuration",
+  "reviewer_model": "azure-kmamc/gpt-6-luna",
+  "reasoning_effort": "max",
+  "runtime_evidence": "Actual rollout turn_context in 01a164ea-9c8c-7263-add4-73a79c865866",
+  "checks": [
+    "Actual study.backtest generated configuration reached the mocked forecast loader",
+    "Extra scheduling.random_seed rejected before forecast loading",
+    "Substituted selection_metadata rejected before forecast loading"
+  ],
+  "limitations": [
+    "In-memory probes only; no real 2025 data access or scoring",
+    "Existing six-test receipt inspected, not rerun by the read-only verifier",
+    "No independently demonstrated sandbox-enforced read-only boundary"
+  ]
+}
